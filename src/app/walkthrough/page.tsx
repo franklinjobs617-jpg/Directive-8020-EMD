@@ -68,7 +68,7 @@ export default function WalkthroughPage() {
           <iframe
             className="h-full w-full"
             src={`https://www.youtube.com/watch?v=KQee8_ojuso`}
-            title={`Directive 8020 ${video.title}`}
+            title={`Directive 8020 Full Walkthrough - Complete Chapter Guide`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             loading="lazy"
