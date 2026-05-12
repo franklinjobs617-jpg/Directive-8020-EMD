@@ -62,7 +62,6 @@ export default function WalkthroughPage() {
         of the starship Cassiopeia.
       </p>
 
-      {/* Video placeholder */}
       <div className="video-placeholder">
         <div className="aspect-video overflow-hidden rounded-md">
           <iframe
@@ -75,7 +74,7 @@ export default function WalkthroughPage() {
           />
         </div>
       </div>
-   
+
       <h2>Before You Begin: Key Mechanics</h2>
 
       <h3>Stealth &amp; Acoustic Signature</h3>
