@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
+import Script from "next/script";
 
 export const metadataBase = new URL('https://directive8020.top');
 
@@ -101,6 +102,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-background text-foreground">
+
+      <Script
+          id="ga-loader"
+          src="https://www.googletagmanager.com/gtag/js?id=G-4EBPTFKKWC"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag; 
+            
+            gtag('js', new Date());
+            gtag('config', 'G-4EBPTFKKWC', {
+              page_path: window.location.pathname,
+            });
+            console.log('GA4 Script Ready ✅');
+          `}
+        </Script>
         <VideoGameSchema />
         <header className="sticky top-0 z-50 border-b border-white/8 bg-background/95 backdrop-blur-md">
           <nav className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
