@@ -67,7 +67,7 @@ export default function WalkthroughPage() {
         <div className="aspect-video overflow-hidden rounded-md">
           <iframe
             className="h-full w-full"
-            src={`https://www.youtube.com/watch?v=KQee8_ojuso`}
+            src={`https://www.youtube.com/embed/KQee8_ojuso`}
             title={`Directive 8020 Full Walkthrough - Complete Chapter Guide`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -75,7 +75,7 @@ export default function WalkthroughPage() {
           />
         </div>
       </div>
-
+   
       <h2>Before You Begin: Key Mechanics</h2>
 
       <h3>Stealth &amp; Acoustic Signature</h3>
