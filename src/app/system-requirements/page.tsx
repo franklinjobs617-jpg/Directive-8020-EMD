@@ -15,7 +15,7 @@ const faqs = [
   {
     question: 'Can I run Directive 8020 on a GTX 1060?',
     answer:
-      'The GTX 1060 meets the minimum requirements for 1080p at 30fps on Low settings. For a better experience at 60fps, you will need at least an RTX 2060 or equivalent.',
+      'No. The GTX 1060 is below the minimum requirements. Directive 8020 requires at least an RTX 2060 or RX 5700 as a minimum GPU, along with 16GB RAM. The game uses Unreal Engine 5 features that need newer hardware.',
   },
   {
     question: 'Does Directive 8020 support ray tracing?',
@@ -58,13 +58,13 @@ export default function SystemRequirementsPage() {
       <h3>Minimum Specs (1080p, 30fps, Low)</h3>
       <div className="spec-grid">
         {[
-          ['OS', 'Windows 10 64-bit (v1909)'],
-          ['CPU', 'Intel Core i5-8400 / AMD Ryzen 5 2600'],
-          ['RAM', '8 GB'],
-          ['GPU', 'NVIDIA GTX 1060 6GB / AMD RX 580 4GB'],
+          ['OS', 'Windows 10/11 64-bit'],
+          ['CPU', 'Intel Core i5-8500 / AMD Ryzen 5 3500'],
+          ['RAM', '16 GB'],
+          ['GPU', 'NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700'],
           ['DirectX', 'Version 12'],
-          ['Storage', '70 GB SSD'],
-          ['VRAM', '4 GB minimum'],
+          ['Storage', '40 GB available space (SSD recommended)'],
+          ['VRAM', '6 GB minimum'],
         ].map(([label, value], i) => (
           <div key={i} className="spec-row">
             <span className="spec-label">{label}</span>
@@ -77,11 +77,11 @@ export default function SystemRequirementsPage() {
       <div className="spec-grid">
         {[
           ['OS', 'Windows 10/11 64-bit'],
-          ['CPU', 'Intel Core i7-9700K / AMD Ryzen 7 3700X'],
+          ['CPU', 'Intel Core i5-12400F / AMD Ryzen 5 5600X'],
           ['RAM', '16 GB'],
-          ['GPU', 'NVIDIA RTX 2060 Super / AMD RX 5700 XT'],
+          ['GPU', 'NVIDIA GeForce RTX 3070 Ti / AMD Radeon RX 6800'],
           ['DirectX', 'Version 12'],
-          ['Storage', '70 GB SSD'],
+          ['Storage', '40 GB available space (SSD recommended)'],
           ['VRAM', '8 GB recommended'],
         ].map(([label, value], i) => (
           <div key={i} className="spec-row">
@@ -96,10 +96,10 @@ export default function SystemRequirementsPage() {
         {[
           ['OS', 'Windows 11 64-bit'],
           ['CPU', 'Intel Core i7-12700K / AMD Ryzen 7 5800X'],
-          ['RAM', '16 GB'],
-          ['GPU', 'NVIDIA RTX 3070 / AMD RX 6800 XT'],
+          ['RAM', '32 GB'],
+          ['GPU', 'NVIDIA RTX 4070 Ti / AMD RX 7800 XT'],
           ['DirectX', 'Version 12 Ultimate'],
-          ['Storage', '70 GB NVMe SSD'],
+          ['Storage', '40 GB NVMe SSD'],
           ['VRAM', '12 GB+ for 4K'],
         ].map(([label, value], i) => (
           <div key={i} className="spec-row">

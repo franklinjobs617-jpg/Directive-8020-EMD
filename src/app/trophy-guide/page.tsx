@@ -41,10 +41,9 @@ const trophies = [
   { name: 'The Truth Revealed', type: 'Gold', desc: 'Discover the clone laboratory', how: 'Automatic story progression in Chapter 6. Cannot be missed.' },
   { name: '13th Cycle', type: 'Gold', desc: 'Find all experiment logs in the clone lab', how: 'Search the lab thoroughly in Chapter 6. Some logs are in side rooms accessible via the Wedge Tool.' },
   { name: 'Exposed', type: 'Gold', desc: 'Transmit the evidence and expose Corinth', how: 'Choose "Expose Corinth" in Chapter 8 with all crew alive and clone truth accepted.' },
-  { name: 'Stealth Master', type: 'Silver', desc: 'Complete any chapter without being detected', how: 'Chapter 2 is the easiest for this. Crouch through all mimic zones and use Noisemakers to redirect patrols.' },
+  { name: 'Stealth Master', type: 'Silver', desc: 'Complete any chapter without being detected', how: 'Chapter 2 is the easiest for this. Stay in shadows and use the Scanner to track mimic positions before moving.' },
   { name: 'Full Arsenal', type: 'Silver', desc: 'Find all tools and weapon upgrades', how: 'Explore every room. Some tools are behind Wedge Tool doors. Check our walkthrough for locations.' },
-  { name: 'Curator\'s Cut', type: 'Silver', desc: 'Complete the Curator\'s Cut mode', how: 'Unlocked after first playthrough. Plays from different character perspectives with new scenes.' },
-  { name: 'Heirloom Hunter', type: 'Silver', desc: 'Find all Dark Pictures Heirloom dolls', how: 'Hidden collectibles referencing previous games (Man of Medan, Little Hope, House of Ashes). See our collectibles section.' },
+  { name: 'Heirloom Hunter', type: 'Silver', desc: 'Find all Dark Pictures Heirloom dolls', how: 'Hidden collectibles referencing previous games (Man of Medan, Little Hope, House of Ashes, The Devil in Me). See our collectibles section.' },
   { name: 'Ghost in the Machine', type: 'Silver', desc: 'Access all of Oracle\'s hidden files', how: 'In Chapter 4, force Oracle to reveal data. Then find the remaining files in the captain\'s quarters and server room.' },
   { name: 'All Endings', type: 'Silver', desc: 'See every ending in the game', how: 'Use Turning Points to replay from key decision points with different choices.' },
   { name: 'First Blood', type: 'Bronze', desc: 'Witness your first character death', how: 'Almost unavoidable on a blind playthrough.' },
@@ -109,9 +108,9 @@ export default function TrophyGuidePage() {
           <div className="flex gap-3">
             <span className="text-d8020 font-bold shrink-0">Step 4</span>
             <p className="text-zinc-400">
-              <strong className="text-white">Curator&rsquo;s Cut</strong> &mdash;
-              Unlocked after first playthrough. Play from alternate character
-              perspectives for new scenes and any remaining trophies.
+              <strong className="text-white">Cleanup Playthrough</strong> &mdash;
+              Use Turning Points to mop up any remaining trophies. Check the Story
+              Tree to see which paths and outcomes you have not yet discovered.
             </p>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { PageHero } from "@/components/page-hero";
 export const metadata: Metadata = {
   title: "Directive 8020 Full Walkthrough - Complete Chapter Guide",
   description:
-    "Complete Directive 8020 walkthrough covering all chapters, stealth mechanics, scanner usage, acoustic signature system, tools, and the full story of the Cassiopeia crew.",
+    "Complete Directive 8020 walkthrough covering all 8 chapters, stealth mechanics, scanner usage, tools, Turning Points, and the full story of the Cassiopeia crew.",
   alternates: { canonical: "https://directive8020.top/walkthrough/" },
 };
 
@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "Does Directive 8020 have a stealth system?",
     answer:
-      "Yes. Directive 8020 introduces a real-time stealth system with acoustic signatures. Crouching reduces your detection chance by 60%, and using the Scanner reveals enemy positions through walls.",
+      "Yes. Directive 8020 introduces a real-time stealth system called 'Threatening Exploration.' Players must stay in shadows and avoid detection by alien mimics. If detected, it does not always mean immediate death — it can trigger new branching narrative paths.",
   },
   {
     question: "Can I replay specific chapters?",
@@ -28,14 +28,14 @@ const faqs = [
       "Yes, using the Turning Points feature. You can revisit any key decision point from the story tree without replaying the entire game.",
   },
   {
-    question: "What is the Acoustic Signature system?",
+    question: "What tools do you use in Directive 8020?",
     answer:
-      "Acoustic Signature is a detection mechanic where your movement noise is tracked in real-time. Running generates maximum noise, walking produces moderate noise, and crouching minimizes your acoustic footprint. Enemies use sound to locate you.",
+      "Your main tools are: the Scanner (reveals enemy positions and electronics through walls), the Wedge Tool (opens doors and can stun enemies), the Text Messenger (crew communication), the Remote Control (hacks computers from a distance), and a shoulder-mounted Flashlight (enemies can spot the beam).",
   },
   {
     question: "Is there co-op in Directive 8020?",
     answer:
-      "Yes, Directive 8020 supports both online co-op (2 players) and local couch co-op (Movie Night mode with up to 5 players passing the controller).",
+      "Yes. Directive 8020 supports Movie Night mode with up to 5 players (couch co-op). Online co-op was added as a free post-launch update, allowing Movie Night to be played online. Note: the traditional Shared Story mode from previous Dark Pictures games is not in this installment.",
   },
 ];
 
@@ -77,47 +77,54 @@ export default function WalkthroughPage() {
 
       <h2>Before You Begin: Key Mechanics</h2>
 
-      <h3>Stealth &amp; Acoustic Signature</h3>
+      <h3>Stealth &amp; Threatening Exploration</h3>
       <p>
         Unlike previous Dark Pictures entries, Directive 8020 features a{" "}
-        <strong>real-time stealth system</strong>. Your movement generates an
-        Acoustic Signature that enemies can detect. Understanding this system is
-        critical to keeping your crew alive.
+        <strong>real-time stealth system</strong> called "Threatening Exploration."
+        Characters can be killed dynamically outside scripted events — you must
+        stay in shadows and avoid detection by alien mimics. If detected, it does
+        not always mean immediate death; it can trigger new branching narrative
+        paths.
       </p>
       <div className="warn-box">
         <p className="text-yellow-400 text-sm font-semibold mb-1">
           Stealth Tip
         </p>
         <p className="text-sm text-zinc-400">
-          Crouching reduces your Acoustic Signature by <strong>60%</strong>.
-          Always crouch when mimics are nearby. Running is only safe in scripted
-          chase sequences.
+          Stay in shadows and avoid using your flashlight when mimics are nearby —
+          enemies can spot the beam. The shoulder-mounted flashlight on your
+          utility strap is useful for navigation but can give away your position.
+          An optional "safe" mode ensures you always survive stealth sections.
         </p>
       </div>
 
       <h3>Your Toolkit</h3>
       <p>
-        Throughout the Cassiopeia, you will find and use these critical tools:
+        The Cassiopeia crew uses a multifunctional utility strap on the wrist
+        with a shoulder-mounted flashlight. Throughout the game, you will find
+        and use these critical tools:
       </p>
       <ul>
         <li>
           <strong>Scanner</strong> &mdash; Reveals enemy positions and
           interactive objects through walls. Has a limited battery that
-          recharges over time. Essential for planning routes.
+          recharges over time. Essential for planning routes and spotting
+          mimics disguised as crew members.
         </li>
         <li>
           <strong>Wedge Tool</strong> &mdash; Opens sealed doors and access
-          panels. Some doors only open from one side, meaning your choice of
-          route matters.
+          panels. Can also be used to stun enemies in emergencies. Some doors
+          only open from one side, meaning your choice of route matters.
         </li>
         <li>
-          <strong>Noisemakers</strong> &mdash; Throw to distract mimics and draw
-          them away from your path. Limited supply, use wisely.
+          <strong>Text Messenger</strong> &mdash; Allows crew communication
+          across the ship. Use it to coordinate with separated team members
+          and receive mission-critical information.
         </li>
         <li>
-          <strong>Smoke Grenades</strong> &mdash; Create cover for emergency
-          escapes when stealth fails. Does not damage mimics but breaks their
-          line of sight.
+          <strong>Remote Control</strong> &mdash; Hack computers and systems
+          from a distance. Useful for accessing locked data terminals and
+          activating ship systems without putting yourself in danger.
         </li>
       </ul>
 
@@ -182,8 +189,8 @@ export default function WalkthroughPage() {
       </p>
       <p>
         You will find your first <strong>Wedge Tool</strong> in the maintenance
-        corridor. Use it to access a supply room containing Noisemakers and a
-        crew log from Officer Williams &mdash; the first hint that something is
+        corridor. Use it to access a supply room containing additional tools and a
+        crew log from Williams &mdash; the first hint that something is
         deeply wrong with the ship&rsquo;s records.
       </p>
       <figure className="my-8">
@@ -251,7 +258,7 @@ export default function WalkthroughPage() {
         <p className="text-sm text-zinc-400">
           If you sided with Eisele in Chapter 3, the quarantine doors can be
           used as barriers. If you sided with Young, you must rely entirely on
-          stealth and Noisemakers.
+          stealth and the Scanner to track mimic positions.
         </p>
       </div>
 

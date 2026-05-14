@@ -7,7 +7,7 @@ import { PageHero } from '@/components/page-hero';
 export const metadata: Metadata = {
   title: 'Directive 8020 How to Save Everyone - Full Survival Guide',
   description:
-    'Complete guide to keeping every crew member alive in Directive 8020. Step-by-step survival instructions for Young, Eisele, Stafford, Carter, and all characters, including Survivor Mode tips.',
+    'Complete guide to keeping every crew member alive in Directive 8020. Step-by-step survival instructions for Young, Stafford, Eisele, Cooper, Cernan, and Williams, including Survivor Mode tips.',
   alternates: { canonical: 'https://directive8020.top/save-everyone/' },
 };
 
@@ -38,50 +38,50 @@ const characters = [
   {
     name: 'Brianna Young',
     actor: 'Lashana Lynch',
-    role: 'Security Officer',
-    danger: 'Frequently in direct combat with mimics. Most at risk during Chapters 3 and 5.',
+    role: 'Co-Pilot / Astronaut',
+    danger: 'Frequently in direct contact with mimics. Most at risk during stealth sections in Chapters 3 and 5.',
     survival:
       'Side with Eisele in Ch.3 (quarantine doors save her in Ch.5). In Ch.5, complete the stealth section flawlessly. In Ch.7, she must accept the clone truth — if she denies it, she becomes reckless.',
   },
   {
-    name: 'Dr. Eisele',
+    name: 'Nolan Stafford',
+    actor: 'Danny Sapani',
+    role: 'Ship Commander',
+    danger: 'Gets trapped behind the breach in Ch.5. The most common first death in playthroughs.',
+    survival:
+      'In Ch.5, choose "Rescue trapped crew" instead of "Seal the breach." Then navigate the stealth sequence to reach the engineering section. Use the Scanner to track mimic positions before moving.',
+  },
+  {
+    name: 'Laura Eisele',
     actor: 'Lotte Verbeek',
-    role: 'Chief Medical Officer',
+    role: 'Senior Mission Officer',
     danger: 'Isolated in the medical bay during mimic attacks. Vulnerable in Ch.3 and Ch.5.',
     survival:
       'Siding with her quarantine plan in Ch.3 gives her safe zone access. In Ch.5, make sure someone reaches the med bay to warn her. She always accepts the clone truth if you side with her earlier.',
   },
   {
-    name: 'Stafford',
-    actor: '',
-    role: 'Engineering',
-    danger: 'Gets trapped behind the breach in Ch.5. The most common first death in playthroughs.',
+    name: 'Samantha Cooper',
+    actor: 'Anna Leong Brophy',
+    role: 'Medical Specialist',
+    danger: 'Exposed during medical supply runs. Can be caught by mimics while treating injured crew.',
     survival:
-      'In Ch.5, choose "Rescue trapped crew" instead of "Seal the breach." Then navigate the stealth sequence to reach the engineering section. Use Noisemakers to draw mimics away from the rescue route.',
+      'Keep Cooper close to the group during Ch.4-5 exploration. When she splits off for medical duties, use the Scanner to clear her path. Her survival is tied to keeping other crew alive.',
   },
   {
-    name: 'Captain Carter',
-    actor: '',
-    role: 'Commanding Officer',
-    danger: 'Carter faces moral dilemmas that can lead to self-sacrifice. Most at risk in Ch.8.',
+    name: 'Josef Cernan',
+    actor: 'Philip Arditti',
+    role: 'Technical Engineer',
+    danger: 'Must repair ship systems, often alone in dangerous areas. At risk during Ch.5 breach.',
     survival:
-      'If all crew are alive and the clone truth is accepted, Carter will not sacrifice himself. The key is keeping morale high throughout the game by making supportive dialogue choices.',
+      'In Ch.5, ensure the Wedge Tool is available to unlock alternate escape routes for Cernan. Make supportive dialogue choices to keep his morale high — low morale leads to reckless behavior.',
   },
   {
-    name: 'Lt. Sims',
-    actor: '',
-    role: 'First Officer',
-    danger: 'Exposed to the mimic organism during investigation in Ch.2. Can be infected.',
+    name: 'LaMarcus Williams',
+    actor: 'Kobna Holdbrook-Smith',
+    role: 'Corinth Corporation CEO',
+    danger: 'Has access to sensitive information about the clone program. The crew must decide whether to trust him.',
     survival:
-      'In Ch.2, choose to "Investigate the organism" — counterintuitively, gaining knowledge about the mimic helps Sims avoid infection. If you wait, the mimic spreads and Sims gets ambushed.',
-  },
-  {
-    name: 'Williams',
-    actor: '',
-    role: 'Communications Officer',
-    danger: 'Has access to sensitive information. Corinth may target Williams to suppress evidence.',
-    survival:
-      'Protect the private files in Ch.4. If you force Oracle to reveal data, Williams is protected because the truth is already out. If you accept Oracle\'s lies, Williams becomes a target.',
+      'Protect the private files in Ch.4. If you force Oracle to reveal data, Williams is protected because the truth is already out. If you accept Oracle\'s lies, Williams becomes a target. In Ch.8, the shoot-or-spare Williams decision has three possible outcomes depending on past choices.',
   },
 ];
 
@@ -191,8 +191,8 @@ export default function SaveEveryonePage() {
           you faster and patrol more unpredictably.
         </li>
         <li>
-          <strong>Fewer supplies</strong> &mdash; reduced Noisemakers and Smoke
-          Grenades. You must use them strategically.
+          <strong>Fewer supplies</strong> &mdash; limited Scanner battery and
+          Wedge Tool uses. You must manage resources carefully.
         </li>
       </ul>
       <div className="tip-box">
@@ -204,14 +204,14 @@ export default function SaveEveryonePage() {
         </p>
       </div>
 
-      <h2>44 Death Scenes</h2>
+      <h2>Death Scenes</h2>
       <p>
-        Directive 8020 features <strong>44 unique death scenes</strong> across all
+        Directive 8020 features <strong>numerous unique death scenes</strong> across all
         characters. Some are triggered by specific choices, others by failed QTEs
         or stealth sequences. Each death is dramatically different and fully animated.
+        The game tracks which deaths you have discovered in the Story Tree.
       </p>
       <p>
-        {/* TODO: Add expandable list of all 44 death scenes with trigger conditions */}
         <em>A complete death scene catalog with trigger conditions is being compiled
         and will be added soon.</em>
       </p>

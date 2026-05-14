@@ -145,22 +145,22 @@ export default function RootLayout({
                 Endings
               </Link>
               <Link
-                href="/choices-consequences/"
+                href="/characters/"
                 className="hover:text-white transition-colors"
               >
-                Choices
-              </Link>
-              <Link
-                href="/save-everyone/"
-                className="hover:text-white transition-colors"
-              >
-                Save Everyone
+                Characters
               </Link>
               <Link
                 href="/trophy-guide/"
                 className="hover:text-white transition-colors"
               >
                 Trophies
+              </Link>
+              <Link
+                href="/collectibles/"
+                className="hover:text-white transition-colors"
+              >
+                Collectibles
               </Link>
               <Link
                 href="/crashing-fix/"
@@ -198,11 +198,8 @@ export default function RootLayout({
               <Link href="/all-endings/" className="py-1 hover:text-white">
                 Endings
               </Link>
-              <Link
-                href="/choices-consequences/"
-                className="py-1 hover:text-white"
-              >
-                Choices
+              <Link href="/characters/" className="py-1 hover:text-white">
+                Characters
               </Link>
               <Link href="/save-everyone/" className="py-1 hover:text-white">
                 Save Everyone
@@ -210,11 +207,8 @@ export default function RootLayout({
               <Link href="/trophy-guide/" className="py-1 hover:text-white">
                 Trophies
               </Link>
-              <Link
-                href="/system-requirements/"
-                className="py-1 hover:text-white"
-              >
-                System Requirements
+              <Link href="/collectibles/" className="py-1 hover:text-white">
+                Collectibles
               </Link>
               <Link href="/crashing-fix/" className="py-1 hover:text-white">
                 Fixes
@@ -242,6 +236,11 @@ export default function RootLayout({
                     </Link>
                   </li>
                   <li>
+                    <Link href="/best-ending/" className="hover:text-zinc-300">
+                      Best Ending
+                    </Link>
+                  </li>
+                  <li>
                     <Link
                       href="/choices-consequences/"
                       className="hover:text-zinc-300"
@@ -249,10 +248,15 @@ export default function RootLayout({
                       Choices
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/game-length/" className="hover:text-zinc-300">
+                      Game Length
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-white mb-3">Survival</h3>
+                <h3 className="font-semibold text-white mb-3">Gameplay</h3>
                 <ul className="space-y-1.5 text-zinc-500">
                   <li>
                     <Link
@@ -260,6 +264,36 @@ export default function RootLayout({
                       className="hover:text-zinc-300"
                     >
                       Save Everyone
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/all-deaths/" className="hover:text-zinc-300">
+                      All Deaths
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/difficulty-guide/" className="hover:text-zinc-300">
+                      Difficulty Guide
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/multiplayer/" className="hover:text-zinc-300">
+                      Multiplayer
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-white mb-3">Collectibles</h3>
+                <ul className="space-y-1.5 text-zinc-500">
+                  <li>
+                    <Link href="/characters/" className="hover:text-zinc-300">
+                      Characters &amp; Cast
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/collectibles/" className="hover:text-zinc-300">
+                      Dolls &amp; Collectibles
                     </Link>
                   </li>
                   <li>
@@ -286,13 +320,6 @@ export default function RootLayout({
                     </Link>
                   </li>
                 </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-white mb-3">About</h3>
-                <p className="text-zinc-500 leading-relaxed">
-                  Unofficial fan-made guide for Directive 8020 by Supermassive
-                  Games. Not affiliated with Bandai Namco.
-                </p>
               </div>
             </div>
             <div className="mt-8 pt-4 border-t border-white/5 text-center text-xs text-zinc-600">
