@@ -39,6 +39,54 @@ const faqs = [
   },
 ];
 
+const transcriptRouteNotes = [
+  {
+    scene: "Opening mission",
+    whatHappens:
+      "The transcript frames the Cassiopeia as a survey ship sent from a dying Earth toward Tau Ceti f, with Andromeda positioned as the colony follow-up.",
+    playerAction:
+      "Record mission context before judging later rescue, warning, or sacrifice choices.",
+    whyItMatters:
+      "Finale decisions depend on more than who survives; the mission goal and Andromeda risk matter too.",
+  },
+  {
+    scene: "Oracle and the breach",
+    whatHappens:
+      "Early scenes include a hull breach, Oracle status reporting, lockdowns, and scanner tracing through ship systems.",
+    playerAction:
+      "Treat Oracle reports, terminals, live-wire routes, and scanner prompts as route evidence.",
+    whyItMatters:
+      "The scanner is introduced as navigation and verification logic, not just a stealth gadget.",
+  },
+  {
+    scene: "Williams suspicion",
+    whatHappens:
+      "Mid-game scenes connect Williams with secrecy, Oracle-linked data, possible death-state confusion, and scanner testing.",
+    playerAction:
+      "Before trusting or detaining him, compare witness accounts, body-location evidence, and scanner results.",
+    whyItMatters:
+      "This is the clearest example of how identity verification changes route safety.",
+  },
+  {
+    scene: "Hydroponics crisis",
+    whatHappens:
+      "A later route mixes locked doors, fire-control systems, oxygen danger, antenna repair limits, and rescue pressure.",
+    playerAction:
+      "Separate rescue timing, QTE success, suspicion, and communications repair in your notes.",
+    whyItMatters:
+      "A rescue result may come from physical danger, not only a dialogue choice.",
+  },
+  {
+    scene: "Final message choice",
+    whatHappens:
+      "The finale is framed around distress signal versus warning, Andromeda safety, Earth contamination risk, and mission truth.",
+    playerAction:
+      "Log survivors, evidence, Oracle state, and message choice before using Turning Points for endings.",
+    whyItMatters:
+      "Ending value is not simply best or worst; it depends on who is protected and what truth is preserved.",
+  },
+];
+
 export default function WalkthroughPage() {
   return (
     <article className="prose-d8020">
@@ -46,6 +94,7 @@ export default function WalkthroughPage() {
         headline="Directive 8020 Full Walkthrough"
         description="Complete chapter-by-chapter walkthrough for Directive 8020 with stealth mechanics and tool guides."
         url="https://directive8020.top/walkthrough/"
+        dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: "Walkthrough" }]} />
       <PageHero
@@ -73,6 +122,35 @@ export default function WalkthroughPage() {
             loading="lazy"
           />
         </div>
+      </div>
+
+      <h2>Video Transcript Route Notes</h2>
+      <p>
+        A full-game no-commentary transcript was used as a route evidence
+        source for this update. The notes below are paraphrased because
+        automatic subtitles can misspell names and places.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm border-collapse my-4">
+          <thead>
+            <tr className="border-b border-white/10 text-left">
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Scene</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">What Happens</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Player Action</th>
+              <th className="py-2 text-zinc-300 font-semibold">Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody className="text-zinc-400">
+            {transcriptRouteNotes.map((note) => (
+              <tr key={note.scene} className="border-b border-white/5">
+                <td className="py-2 pr-3 text-white font-medium">{note.scene}</td>
+                <td className="py-2 pr-3">{note.whatHappens}</td>
+                <td className="py-2 pr-3">{note.playerAction}</td>
+                <td className="py-2">{note.whyItMatters}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <h2>Before You Begin: Key Mechanics</h2>

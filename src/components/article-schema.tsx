@@ -3,6 +3,7 @@ interface ArticleSchemaProps {
   description: string;
   url: string;
   datePublished?: string;
+  dateModified?: string;
   image?: string;
 }
 
@@ -11,6 +12,7 @@ export function ArticleSchema({
   description,
   url,
   datePublished = '2026-05-12',
+  dateModified = datePublished,
   image = '/og-image.jpg',
 }: ArticleSchemaProps) {
   const schema = {
@@ -20,7 +22,7 @@ export function ArticleSchema({
     description,
     url,
     datePublished,
-    dateModified: datePublished,
+    dateModified,
     author: {
       '@type': 'Organization',
       name: 'Directive 8020 Guide',

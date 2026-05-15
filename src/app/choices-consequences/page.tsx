@@ -109,6 +109,49 @@ const turningPoints = [
   },
 ];
 
+const transcriptChoiceExamples = [
+  {
+    scene: 'Consult Oracle before breach repair',
+    whatHappens:
+      'The early route gives the crew a chance to ask Oracle for more data before moving into damaged systems.',
+    playerAction:
+      'Prefer evidence gathering when no timer is forcing immediate action.',
+    type: 'Evidence choice',
+  },
+  {
+    scene: 'Wake others or inspect first',
+    whatHappens:
+      'The opening breach creates a communication decision around who knows about the danger.',
+    playerAction:
+      'Record who witnessed the breach, who stayed uninformed, and who later repeats details.',
+    type: 'Communication choice',
+  },
+  {
+    scene: 'Williams containment',
+    whatHappens:
+      'Mid-game suspicion around Williams creates a choice between trust, detention, and further scanning.',
+    playerAction:
+      'Use witness accounts, body-state evidence, Oracle files, and scanner readiness before deciding.',
+    type: 'Trust choice',
+  },
+  {
+    scene: 'Hydroponics rescue pressure',
+    whatHappens:
+      'A hazard scene combines locked doors, fire-control systems, oxygen danger, and rescue timing.',
+    playerAction:
+      'Track QTE outcome and rescue route separately from dialogue choices.',
+    type: 'Rescue choice',
+  },
+  {
+    scene: 'Distress or warning',
+    whatHappens:
+      'The finale frames a major decision around whether to request rescue or warn Andromeda away.',
+    playerAction:
+      'Record survivors, evidence, contamination risk, and message choice before comparing endings.',
+    type: 'Finale choice',
+  },
+];
+
 export default function ChoicesConsequencesPage() {
   return (
     <article className="prose-d8020">
@@ -116,6 +159,7 @@ export default function ChoicesConsequencesPage() {
         headline="Directive 8020 All Choices & Consequences"
         description="Complete guide to every choice, consequence, and Turning Point in Directive 8020."
         url="https://directive8020.top/choices-consequences/"
+        dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Choices & Consequences' }]} />
       <PageHero src="/steam-ss04.jpg" alt="Directive 8020 Turning Point choice interface HELP or RUN decision" />
@@ -153,6 +197,35 @@ export default function ChoicesConsequencesPage() {
           going for the platinum trophy, you must make the right choices on your
           first attempt in that mode.
         </p>
+      </div>
+
+      <h2>Concrete Choice Examples from the Transcript</h2>
+      <p>
+        These examples are paraphrased from the full-game transcript and grouped
+        by decision type. They help separate ordinary dialogue from route
+        choices that affect evidence, trust, rescue timing, or endings.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm border-collapse my-4">
+          <thead>
+            <tr className="border-b border-white/10 text-left">
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Scene</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">What Happens</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Player Action</th>
+              <th className="py-2 text-zinc-300 font-semibold">Choice Type</th>
+            </tr>
+          </thead>
+          <tbody className="text-zinc-400">
+            {transcriptChoiceExamples.map((example) => (
+              <tr key={example.scene} className="border-b border-white/5">
+                <td className="py-2 pr-3 text-white font-medium">{example.scene}</td>
+                <td className="py-2 pr-3">{example.whatHappens}</td>
+                <td className="py-2 pr-3">{example.playerAction}</td>
+                <td className="py-2">{example.type}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <h2>All 8 Turning Points</h2>

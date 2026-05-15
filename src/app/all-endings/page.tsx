@@ -39,6 +39,49 @@ const faqs = [
   },
 ];
 
+const transcriptEndingConditions = [
+  {
+    evidence: 'Distress signal',
+    guideUse:
+      'Track routes where the crew tries to call for rescue or contact outside help.',
+    spoilerLevel: 'High',
+    note:
+      'Rescue can save survivors, but it may also expose Andromeda or Earth if contamination is unresolved.',
+  },
+  {
+    evidence: 'Warning message',
+    guideUse:
+      'Track routes where the crew warns Andromeda away instead of asking for extraction.',
+    spoilerLevel: 'High',
+    note:
+      'This should be treated as a mission-priority ending condition, not simply a bad ending choice.',
+  },
+  {
+    evidence: 'Andromeda risk',
+    guideUse:
+      'Record whether each ending protects the Cassiopeia crew, Andromeda, Earth, or the evidence trail.',
+    spoilerLevel: 'High',
+    note:
+      'The ending can change meaning if saving one group puts another group at risk.',
+  },
+  {
+    evidence: 'Oracle protocols',
+    guideUse:
+      'Record whether Oracle data was accessed, trusted, resisted, or used as proof before the finale.',
+    spoilerLevel: 'Medium',
+    note:
+      'Oracle context helps explain why some late choices feel more informed than others.',
+  },
+  {
+    evidence: 'Clone and cycle reveal',
+    guideUse:
+      'Use this only after one completed route to interpret the final state and post-ending context.',
+    spoilerLevel: 'High',
+    note:
+      'The transcript connects copied memories, synthetic bodies, repeat missions, and Corinth or Earth knowledge.',
+  },
+];
+
 export default function AllEndingsPage() {
   return (
     <article className="prose-d8020">
@@ -46,6 +89,7 @@ export default function AllEndingsPage() {
         headline="Directive 8020 All Endings Explained"
         description="Complete breakdown of every ending in Directive 8020, including the clone twist and best ending guide."
         url="https://directive8020.top/all-endings/"
+        dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'All Endings' }]} />
       <PageHero src="/steam-ss03.jpg" alt="Directive 8020 clone confrontation scene - all endings guide" />
@@ -67,6 +111,37 @@ export default function AllEndingsPage() {
           This guide reveals the full plot of Directive 8020, including the clone
           twist and all ending outcomes. Read at your own risk.
         </p>
+      </div>
+
+      <h2>Transcript-Based Finale Conditions</h2>
+      <p>
+        The ending should not be reduced to one final button press. The
+        transcript separates the finale into survivor state, message choice,
+        Andromeda risk, Earth contamination risk, Oracle context, and the cycle
+        reveal. Use this spoiler table after you have finished at least one
+        route.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm border-collapse my-4">
+          <thead>
+            <tr className="border-b border-white/10 text-left">
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Transcript Evidence</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Guide Use</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Spoiler Level</th>
+              <th className="py-2 text-zinc-300 font-semibold">Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody className="text-zinc-400">
+            {transcriptEndingConditions.map((row) => (
+              <tr key={row.evidence} className="border-b border-white/5">
+                <td className="py-2 pr-3 text-white font-medium">{row.evidence}</td>
+                <td className="py-2 pr-3">{row.guideUse}</td>
+                <td className="py-2 pr-3">{row.spoilerLevel}</td>
+                <td className="py-2">{row.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <h2>The Clone Twist: The Truth About the Crew</h2>

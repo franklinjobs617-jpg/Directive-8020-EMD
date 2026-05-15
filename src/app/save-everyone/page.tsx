@@ -85,6 +85,54 @@ const characters = [
   },
 ];
 
+const transcriptSurvivalChecks = [
+  {
+    scene: 'Early breach response',
+    whatHappens:
+      'The opening route starts with Oracle reporting damage, lockdowns, and a manual repair path.',
+    playerAction:
+      'Use the scanner and terminals carefully before moving into damaged spaces.',
+    whyItMatters:
+      'Avoidable route damage can start before the mimic threat is fully understood.',
+  },
+  {
+    scene: 'Williams identity check',
+    whatHappens:
+      'Mid-game scenes create confusion around Williams, reported death-state evidence, and scanner testing.',
+    playerAction:
+      'Do not trust or condemn him from one clue; compare witnesses, timeline, Oracle files, and scan results.',
+    whyItMatters:
+      'Identity verification is central to keeping both suspects and survivors alive.',
+  },
+  {
+    scene: 'Hydroponics rescue',
+    whatHappens:
+      'A later hazard route involves locked access, fire or oxygen danger, rescue timing, and antenna repair limits.',
+    playerAction:
+      'Separate QTE performance, rescue timing, and suspicion choices in your notes.',
+    whyItMatters:
+      'A death here may come from delayed action or failed mechanics rather than the final dialogue option.',
+  },
+  {
+    scene: 'Isolated returns',
+    whatHappens:
+      'Several high-risk moments revolve around characters returning with incomplete or suspicious context.',
+    playerAction:
+      'Use group-safe routes, witnesses, shared memories, and scanner checks before following anyone alone.',
+    whyItMatters:
+      'Blind trust can turn a rescue route into a mimic-risk route.',
+  },
+  {
+    scene: 'Finale message',
+    whatHappens:
+      'The finale weighs survivor rescue against warning Andromeda and protecting Earth from contamination.',
+    playerAction:
+      'Record who is alive, what evidence exists, and what message is sent.',
+    whyItMatters:
+      'Saving everyone physically is only part of the best route if the final mission outcome is unsafe.',
+  },
+];
+
 export default function SaveEveryonePage() {
   return (
     <article className="prose-d8020">
@@ -92,6 +140,7 @@ export default function SaveEveryonePage() {
         headline="Directive 8020 How to Save Everyone"
         description="Complete survival guide for every crew member in Directive 8020."
         url="https://directive8020.top/save-everyone/"
+        dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Save Everyone' }]} />
       <PageHero src="/steam-ss06.jpg" alt="Directive 8020 character infected by mimic - how to save everyone guide" />
@@ -128,6 +177,35 @@ export default function SaveEveryonePage() {
           <li>Ch.7: Accept the clone truth</li>
           <li>Ch.8: Expose Corinth</li>
         </ol>
+      </div>
+
+      <h2>Transcript Survival Checks</h2>
+      <p>
+        The full-game transcript makes the everyone-lives route more practical:
+        survival is about information control, identity verification, scanner
+        checks, rescue timing, and the final mission message.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm border-collapse my-4">
+          <thead>
+            <tr className="border-b border-white/10 text-left">
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Scene</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">What Happens</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Player Action</th>
+              <th className="py-2 text-zinc-300 font-semibold">Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody className="text-zinc-400">
+            {transcriptSurvivalChecks.map((check) => (
+              <tr key={check.scene} className="border-b border-white/5">
+                <td className="py-2 pr-3 text-white font-medium">{check.scene}</td>
+                <td className="py-2 pr-3">{check.whatHappens}</td>
+                <td className="py-2 pr-3">{check.playerAction}</td>
+                <td className="py-2">{check.whyItMatters}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <h2>Character-by-Character Survival Guide</h2>

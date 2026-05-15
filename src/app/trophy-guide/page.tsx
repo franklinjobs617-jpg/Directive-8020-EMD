@@ -93,7 +93,7 @@ export default function TrophyGuidePage() {
             <p className="text-zinc-400">
               <strong className="text-white">Turning Points Cleanup</strong> &mdash;
               Use the Story Tree to replay key decisions and collect missed trophies.
-              Go for &ldquo;Everyone Lives,&rdrdquo; &ldquo;All Endings,&rdquo;
+              Go for &ldquo;Everyone Lives,&rdquo; &ldquo;All Endings,&rdquo;
               and collectible trophies.
             </p>
           </div>

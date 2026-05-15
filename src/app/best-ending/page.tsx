@@ -7,7 +7,7 @@ import { PageHero } from '@/components/page-hero';
 export const metadata: Metadata = {
   title: 'Directive 8020 Best Ending Guide - How to Get the Good Ending',
   description:
-    'Step-by-step guide to getting the best ending in Directive 8020. All critical choices, how to save everyone, expose Corinth, and unlock the true ending. Includes post-credits scene details.',
+    'Directive 8020 best ending guide with survivor tracking, evidence checks, clone and cycle truth, Andromeda risk, rescue vs warning choices, and Story Tree cleanup.',
   alternates: { canonical: 'https://directive8020.top/best-ending/' },
 };
 
@@ -15,12 +15,12 @@ const faqs = [
   {
     question: 'What is the best ending in Directive 8020?',
     answer:
-      'The best ending requires all crew members to survive, accepting the clone truth in Chapter 7, and choosing to expose Corinth in Chapter 8. The surviving crew escapes via shuttle and the evidence is transmitted to Earth, revealing the corporation\'s crimes.',
+      'The best ending route should be tracked through survivor state, evidence, clone/cycle truth, message choice, and whether the outcome protects the crew, Andromeda, and Earth. Treat exact route labels as spoiler cleanup until verified in your Story Tree.',
   },
   {
     question: 'How do I get the true ending?',
     answer:
-      'The true ending is achieved by: keeping all 5 playable characters alive, finding all experiment logs in Chapter 6, accepting the clone truth in Chapter 7, and choosing "Expose Corinth" in Chapter 8. This unlocks the fullest version of the story.',
+      'Use a clean route with all major survivors alive, strong evidence collected, identity checks passed, and a finale decision that balances rescue against contamination risk. Then compare variants through Turning Points.',
   },
   {
     question: 'Can everyone survive in Directive 8020?',
@@ -98,13 +98,47 @@ const criticalChoices = [
   },
 ];
 
+const bestEndingConditions = [
+  {
+    condition: 'Survivor state',
+    trackThis: 'Who is alive, injured, isolated, or missing before the finale.',
+    whyItMatters:
+      'A route with more living witnesses usually keeps more finale options open.',
+  },
+  {
+    condition: 'Evidence state',
+    trackThis: 'Oracle files, Williams context, experiment evidence, and identity-verification clues.',
+    whyItMatters:
+      'Evidence changes whether the crew understands the threat before making a final call.',
+  },
+  {
+    condition: 'Message choice',
+    trackThis: 'Whether the finale sends rescue context, a warning, or another mission outcome.',
+    whyItMatters:
+      'The transcript frames rescue and warning as different ethical routes, not simple good and bad buttons.',
+  },
+  {
+    condition: 'Andromeda / Earth risk',
+    trackThis: 'Whether the ending protects only the Cassiopeia crew or also avoids spreading contamination.',
+    whyItMatters:
+      'A survivor-heavy ending may still be compromised if it endangers another ship or Earth.',
+  },
+  {
+    condition: 'Cycle truth',
+    trackThis: 'Whether copied memories, synthetic bodies, and repeat-mission context have been revealed.',
+    whyItMatters:
+      'The best interpretation of an ending depends on what the crew and player know by the final scene.',
+  },
+];
+
 export default function BestEndingPage() {
   return (
     <article className="prose-d8020">
       <ArticleSchema
         headline="Directive 8020 Best Ending Guide"
-        description="Step-by-step guide to the best ending in Directive 8020 with all critical choices and post-credits details."
+        description="Directive 8020 best ending guide with survivor tracking, evidence checks, clone and cycle truth, Andromeda risk, rescue vs warning choices, and Story Tree cleanup."
         url="https://directive8020.top/best-ending/"
+        dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Best Ending' }]} />
       <PageHero src="/steam-ss11.jpg" alt="Directive 8020 revelation scene - best ending guide with all critical choices" />
@@ -120,22 +154,51 @@ export default function BestEndingPage() {
 
       <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-5 mb-8">
         <p className="text-emerald-400 text-sm font-semibold mb-2">
-          Best Ending Requirements (TL;DR)
+          Best Ending Route Conditions (TL;DR)
         </p>
         <ol className="text-sm text-zinc-400 space-y-1 list-decimal pl-4">
           <li>Keep all 5 playable characters alive</li>
-          <li>Make the correct choice at every Turning Point (see table below)</li>
-          <li>Find all experiment logs in the clone lab (Chapter 6)</li>
-          <li>Accept the clone truth in Chapter 7</li>
-          <li>Choose &ldquo;Expose Corinth&rdquo; in Chapter 8</li>
-          <li>Successfully escape via shuttle</li>
+          <li>Preserve evidence before accusation or containment scenes</li>
+          <li>Verify isolated returns with scanner, witness, or timeline clues</li>
+          <li>Understand the clone and cycle truth before finale cleanup</li>
+          <li>Compare distress, warning, rescue, and evidence outcomes separately</li>
+          <li>Use Turning Points to test one final condition at a time</li>
         </ol>
+      </div>
+
+      <h2>Best Ending Conditions from the Transcript</h2>
+      <p>
+        The safest best-ending method is to track conditions, not just memorize
+        one final choice. The full-game transcript shows that the finale weighs
+        rescue, warning, Andromeda safety, Earth contamination, Oracle context,
+        and the clone/cycle truth.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm border-collapse my-4">
+          <thead>
+            <tr className="border-b border-white/10 text-left">
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Condition</th>
+              <th className="py-2 pr-3 text-zinc-300 font-semibold">Track This</th>
+              <th className="py-2 text-zinc-300 font-semibold">Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody className="text-zinc-400">
+            {bestEndingConditions.map((item) => (
+              <tr key={item.condition} className="border-b border-white/5">
+                <td className="py-2 pr-3 text-white font-medium">{item.condition}</td>
+                <td className="py-2 pr-3">{item.trackThis}</td>
+                <td className="py-2">{item.whyItMatters}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <h2>All Critical Choices</h2>
       <p>
-        Every chapter has at least one decision that affects the ending. Here is
-        the optimal path for the best outcome:
+        Every chapter has at least one decision that can affect the ending.
+        Treat this table as a working route map, then verify exact outcomes in
+        your Story Tree.
       </p>
 
       <div className="overflow-x-auto">
@@ -220,10 +283,11 @@ export default function BestEndingPage() {
 
       <h3>Chapter 8: Expose Corinth</h3>
       <p>
-        In the final decision, choose to <strong>expose Corinth</strong>. This
-        transmits all evidence to Earth, revealing the corporation&apos;s crimes.
-        Then successfully escape via the shuttle. The specific shuttle destination
-        (abandoned Cassiopeia or booster ring) affects the post-credits scene.
+        In the finale, do not treat the last decision as a simple good-versus-bad
+        button. The transcript frames the ending around rescue, warning,
+        Andromeda safety, Earth contamination risk, and whether enough evidence
+        survives to explain the truth. Record the exact message and outcome
+        before using Turning Points.
       </p>
 
       <h2>Post-Credits Scene</h2>
