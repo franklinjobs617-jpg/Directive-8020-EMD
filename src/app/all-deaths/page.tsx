@@ -122,7 +122,7 @@ export default function AllDeathsPage() {
         url="https://directive8020.top/all-deaths/"
       />
       <Breadcrumb items={[{ label: 'All Deaths' }]} />
-      <PageHero src="/steam-ss05.jpg" alt="Directive 8020 astronaut caught by alien mimic - all deaths guide" />
+      <PageHero src="/steam-ss05.webp" alt="Directive 8020 astronaut caught by alien mimic - all deaths guide" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         All Deaths Guide

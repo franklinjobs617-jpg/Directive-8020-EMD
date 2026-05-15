@@ -15,7 +15,7 @@ const guides = [
     title: 'Full Walkthrough',
     desc: 'Chapter-by-chapter guide with stealth mechanics, scanner usage, and the complete story of the Cassiopeia.',
     tag: 'Complete Guide',
-    img: '/steam-ss01.jpg',
+    img: '/steam-ss01.webp',
     imgAlt: 'Directive 8020 astronaut in spaceship corridor - full game walkthrough',
   },
   {
@@ -23,7 +23,7 @@ const guides = [
     title: 'All Endings Explained',
     desc: 'Every ending revealed, including the devastating clone twist and the truth about the 13th cycle.',
     tag: 'Story',
-    img: '/steam-ss03.jpg',
+    img: '/steam-ss03.webp',
     imgAlt: 'Directive 8020 clone confrontation scene - all endings explained',
   },
   {
@@ -31,7 +31,7 @@ const guides = [
     title: 'Best Ending Guide',
     desc: 'Step-by-step guide to the optimal ending. All critical choices, how to save everyone, and expose Corinth.',
     tag: 'Endings',
-    img: '/steam-ss11.jpg',
+    img: '/steam-ss11.webp',
     imgAlt: 'Directive 8020 revelation scene - best ending guide',
   },
   {
@@ -47,7 +47,7 @@ const guides = [
     title: 'All Choices & Consequences',
     desc: 'Every Turning Point mapped out. Know exactly what each decision triggers before you commit.',
     tag: 'Decisions',
-    img: '/steam-ss04.jpg',
+    img: '/steam-ss04.webp',
     imgAlt: 'Directive 8020 Turning Point choice interface - help or run decision',
   },
   {
@@ -55,7 +55,7 @@ const guides = [
     title: 'How to Save Everyone',
     desc: 'Step-by-step survival guide for every crew member. Keep Young, Stafford, Eisele, and the rest alive.',
     tag: 'Survival',
-    img: '/steam-ss06.jpg',
+    img: '/steam-ss06.webp',
     imgAlt: 'Directive 8020 infected crew member - how to save everyone guide',
   },
   {
@@ -63,7 +63,7 @@ const guides = [
     title: 'All Deaths Guide',
     desc: 'Every death scene explained. Triggers, avoidance tips, and the "everyone dies" ending path.',
     tag: 'Deaths',
-    img: '/steam-ss05.jpg',
+    img: '/steam-ss05.webp',
     imgAlt: 'Directive 8020 astronaut caught by mimic - all deaths guide',
   },
   {
@@ -71,7 +71,7 @@ const guides = [
     title: 'Collectibles & Dolls',
     desc: 'All Heirloom dolls, experiment logs, Oracle files, and Williams\' private files with locations.',
     tag: 'Collectibles',
-    img: '/steam-ss07.jpg',
+    img: '/steam-ss07.webp',
     imgAlt: 'Directive 8020 astronaut exploring cave - collectibles and dolls guide',
   },
   {
@@ -79,7 +79,7 @@ const guides = [
     title: 'Trophy Guide & List',
     desc: 'Complete trophy list, platinum roadmap, and Survivor Mode strategies.',
     tag: 'Trophies',
-    img: '/steam-ss08.jpg',
+    img: '/steam-ss08.webp',
     imgAlt: 'Directive 8020 trophy and achievement guide',
   },
   {
@@ -87,7 +87,7 @@ const guides = [
     title: 'Difficulty & Turning Points',
     desc: 'Explorer, Normal, and Survivor modes explained. How the rewind system works.',
     tag: 'Difficulty',
-    img: '/steam-ss09.jpg',
+    img: '/steam-ss09.webp',
     imgAlt: 'Directive 8020 difficulty settings and turning points guide',
   },
   {
@@ -95,7 +95,7 @@ const guides = [
     title: 'Multiplayer & Co-Op',
     desc: 'Movie Night mode, online co-op setup, and what replaced Shared Story.',
     tag: 'Co-Op',
-    img: '/steam-ss10.jpg',
+    img: '/steam-ss10.webp',
     imgAlt: 'Directive 8020 multiplayer and co-op guide',
   },
   {
@@ -103,7 +103,7 @@ const guides = [
     title: 'Game Length & Episodes',
     desc: 'How long to beat, all 8 episodes listed, and completionist time breakdown.',
     tag: 'Info',
-    img: '/steam-ss02.jpg',
+    img: '/steam-ss02.webp',
     imgAlt: 'Directive 8020 game length and episode guide',
   },
   {
@@ -111,7 +111,7 @@ const guides = [
     title: 'System Requirements',
     desc: 'Minimum and recommended PC specs, console performance modes, and optimization tips.',
     tag: 'Technical',
-    img: '/steam-ss02.jpg',
+    img: '/steam-ss02.webp',
     imgAlt: 'Directive 8020 spaceship exterior and space station - system requirements',
   },
   {
@@ -119,7 +119,7 @@ const guides = [
     title: 'Crashing & Bug Fixes',
     desc: 'Fix black screen, won\'t launch, stuttering, and save corruption issues on PC and consoles.',
     tag: 'Fixes',
-    img: '/steam-ss05.jpg',
+    img: '/steam-ss05.webp',
     imgAlt: 'Directive 8020 astronaut thrown by explosion - crashing and bug fixes',
   },
 ];
@@ -136,7 +136,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative mb-12 overflow-hidden rounded-xl border border-white/5">
         <Image
-          src="/steam-header.jpg"
+          src="/steam-header.webp"
           alt="Directive 8020 - The Dark Pictures Anthology official promotional artwork featuring astronaut in space helmet"
           fill
           className="object-cover"

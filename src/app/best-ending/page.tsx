@@ -141,7 +141,7 @@ export default function BestEndingPage() {
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Best Ending' }]} />
-      <PageHero src="/steam-ss11.jpg" alt="Directive 8020 revelation scene - best ending guide with all critical choices" />
+      <PageHero src="/steam-ss11.webp" alt="Directive 8020 revelation scene - best ending guide with all critical choices" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         Best Ending Guide

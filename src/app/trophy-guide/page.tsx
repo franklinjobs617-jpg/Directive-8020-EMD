@@ -63,7 +63,7 @@ export default function TrophyGuidePage() {
         url="https://directive8020.top/trophy-guide/"
       />
       <Breadcrumb items={[{ label: 'Trophy Guide' }]} />
-      <PageHero src="/steam-ss07.jpg" alt="Directive 8020 astronaut exploring alien cave - trophy guide and achievement list" />
+      <PageHero src="/steam-ss07.webp" alt="Directive 8020 astronaut exploring alien cave - trophy guide and achievement list" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         Trophy Guide &amp; Complete Trophy List

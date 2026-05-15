@@ -162,7 +162,7 @@ export default function ChoicesConsequencesPage() {
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Choices & Consequences' }]} />
-      <PageHero src="/steam-ss04.jpg" alt="Directive 8020 Turning Point choice interface HELP or RUN decision" />
+      <PageHero src="/steam-ss04.webp" alt="Directive 8020 Turning Point choice interface HELP or RUN decision" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         All Choices &amp; Consequences
@@ -174,7 +174,7 @@ export default function ChoicesConsequencesPage() {
       </p>
       <figure className="my-8">
         <img
-          src="/steam-ss04.jpg"
+          src="/steam-ss04.webp"
           alt="Directive 8020 Turning Point choice interface HELP or RUN decision"
           className="w-full rounded-lg border border-zinc-800"
         />

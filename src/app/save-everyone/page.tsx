@@ -143,7 +143,7 @@ export default function SaveEveryonePage() {
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Save Everyone' }]} />
-      <PageHero src="/steam-ss06.jpg" alt="Directive 8020 character infected by mimic - how to save everyone guide" />
+      <PageHero src="/steam-ss06.webp" alt="Directive 8020 character infected by mimic - how to save everyone guide" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         How to Save Everyone in Directive 8020
@@ -155,7 +155,7 @@ export default function SaveEveryonePage() {
       </p>
       <figure className="my-8">
         <img
-          src="/steam-ss06.jpg"
+          src="/steam-ss06.webp"
           alt="Directive 8020 character infected by mimic creature - save everyone guide"
           className="w-full rounded-lg border border-zinc-800"
         />

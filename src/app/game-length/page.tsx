@@ -91,7 +91,7 @@ export default function GameLengthPage() {
         url="https://directive8020.top/game-length/"
       />
       <Breadcrumb items={[{ label: 'Game Length' }]} />
-      <PageHero src="/steam-ss01.jpg" alt="Directive 8020 spaceship corridor - game length and episode guide" />
+      <PageHero src="/steam-ss01.webp" alt="Directive 8020 spaceship corridor - game length and episode guide" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         Game Length &amp; Episodes

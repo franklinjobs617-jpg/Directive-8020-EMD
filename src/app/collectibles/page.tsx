@@ -143,7 +143,7 @@ export default function CollectiblesPage() {
         url="https://directive8020.top/collectibles/"
       />
       <Breadcrumb items={[{ label: 'Collectibles' }]} />
-      <PageHero src="/steam-ss07.jpg" alt="Directive 8020 astronaut exploring alien cave - collectibles and dolls guide" />
+      <PageHero src="/steam-ss07.webp" alt="Directive 8020 astronaut exploring alien cave - collectibles and dolls guide" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         All Collectibles &amp; Dolls Guide

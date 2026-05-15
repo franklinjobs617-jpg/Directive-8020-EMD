@@ -48,7 +48,7 @@ export default function MultiplayerPage() {
         url="https://directive8020.top/multiplayer/"
       />
       <Breadcrumb items={[{ label: 'Multiplayer' }]} />
-      <PageHero src="/steam-ss04.jpg" alt="Directive 8020 crew making group decision - multiplayer and co-op guide" />
+      <PageHero src="/steam-ss04.webp" alt="Directive 8020 crew making group decision - multiplayer and co-op guide" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         Multiplayer &amp; Co-Op Guide

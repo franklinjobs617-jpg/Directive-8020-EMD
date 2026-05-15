@@ -98,7 +98,7 @@ export default function WalkthroughPage() {
       />
       <Breadcrumb items={[{ label: "Walkthrough" }]} />
       <PageHero
-        src="/steam-ss01.jpg"
+        src="/steam-ss01.webp"
         alt="Directive 8020 astronaut in distress during full game walkthrough"
       />
 
@@ -233,7 +233,7 @@ export default function WalkthroughPage() {
       </p>
       <figure className="my-8">
         <img
-          src="/steam-ss02.jpg"
+          src="/steam-ss02.webp"
           alt="Directive 8020 Cassiopeia spaceship bridge - meteor approach warning scene"
           className="w-full rounded-lg border border-zinc-800"
         />
@@ -273,7 +273,7 @@ export default function WalkthroughPage() {
       </p>
       <figure className="my-8">
         <img
-          src="/steam-ss08.jpg"
+          src="/steam-ss08.webp"
           alt="Directive 8020 first contact alien organism - Sims investigation team in damaged sector"
           className="w-full rounded-lg border border-zinc-800"
         />
@@ -288,7 +288,7 @@ export default function WalkthroughPage() {
       </p>
       <figure className="my-8">
         <img
-          src="/steam-ss09.jpg"
+          src="/steam-ss09.webp"
           alt="Directive 8020 quarantine zone medical bay - Eisele and Young argument scene"
           className="w-full rounded-lg border border-zinc-800"
         />
@@ -350,7 +350,7 @@ export default function WalkthroughPage() {
       </p>
       <figure className="my-8">
         <img
-          src="/steam-ss03.jpg"
+          src="/steam-ss03.webp"
           alt="Directive 8020 clone laboratory discovery scene - vats of unconscious bodies"
           className="w-full rounded-lg border border-zinc-800"
         />
@@ -375,7 +375,7 @@ export default function WalkthroughPage() {
       </p>
       <figure className="my-8">
         <img
-          src="/steam-ss11.jpg"
+          src="/steam-ss11.webp"
           alt="Directive 8020 Revelation scene - crew discovers they are clones with memory backups"
           className="w-full rounded-lg border border-zinc-800"
         />

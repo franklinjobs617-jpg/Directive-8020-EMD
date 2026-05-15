@@ -81,7 +81,7 @@ export default function DifficultyGuidePage() {
         url="https://directive8020.top/difficulty-guide/"
       />
       <Breadcrumb items={[{ label: 'Difficulty Guide' }]} />
-      <PageHero src="/steam-ss04.jpg" alt="Directive 8020 crew making difficult decision - difficulty and turning points guide" />
+      <PageHero src="/steam-ss04.webp" alt="Directive 8020 crew making difficult decision - difficulty and turning points guide" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         Difficulty Guide &amp; Turning Points

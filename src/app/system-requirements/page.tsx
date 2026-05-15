@@ -43,7 +43,7 @@ export default function SystemRequirementsPage() {
         url="https://directive8020.top/system-requirements/"
       />
       <Breadcrumb items={[{ label: 'System Requirements' }]} />
-      <PageHero src="/steam-ss02.jpg" alt="Directive 8020 astronaut viewing massive space structure - system requirements and PC specs" />
+      <PageHero src="/steam-ss02.webp" alt="Directive 8020 astronaut viewing massive space structure - system requirements and PC specs" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         System Requirements

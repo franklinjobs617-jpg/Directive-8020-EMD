@@ -43,7 +43,7 @@ export default function CrashingFixPage() {
         url="https://directive8020.top/crashing-fix/"
       />
       <Breadcrumb items={[{ label: 'Crashing Fix' }]} />
-      <PageHero src="/steam-ss05.jpg" alt="Directive 8020 astronaut thrown by explosion - crashing and bug fixes troubleshooting" />
+      <PageHero src="/steam-ss05.webp" alt="Directive 8020 astronaut thrown by explosion - crashing and bug fixes troubleshooting" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         Crashing, Black Screen &amp; Launch Fixes

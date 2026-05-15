@@ -92,7 +92,7 @@ export default function AllEndingsPage() {
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'All Endings' }]} />
-      <PageHero src="/steam-ss03.jpg" alt="Directive 8020 clone confrontation scene - all endings guide" />
+      <PageHero src="/steam-ss03.webp" alt="Directive 8020 clone confrontation scene - all endings guide" />
 
       <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
         All Endings Explained
@@ -238,7 +238,7 @@ export default function AllEndingsPage() {
       <h3>3. Best Ending: Expose Corinth</h3>
       <figure className="my-8">
         <img
-          src="/steam-ss11.jpg"
+          src="/steam-ss11.webp"
           alt="Directive 8020 characters approaching bright doorway - ending scene"
           className="w-full rounded-lg border border-zinc-800"
         />
