@@ -322,6 +322,20 @@ export default function RootLayout({
                 </ul>
               </div>
             </div>
+            <div className="mt-6 pt-4 border-t border-white/5 text-xs text-zinc-600">
+              <p>
+                Our other project:{' '}
+                <a
+                  href="https://aiclotheschangers.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-400 hover:text-d8020 transition-colors"
+                >
+                  AI Clothes Changers
+                </a>{' '}
+                &mdash; Free AI clothes changer tool to swap outfits in photos instantly.
+              </p>
+            </div>
             <div className="mt-8 pt-4 border-t border-white/5 text-center text-xs text-zinc-600">
               &copy; 2026 directive8020.top &mdash; Fan guide, not affiliated
               with Supermassive Games or Bandai Namco.
