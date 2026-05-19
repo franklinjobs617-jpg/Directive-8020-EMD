@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next';
 
+const BASE_URL = 'https://directive8020.top';
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -8,6 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://directive8020.top/sitemap.xml',
+    sitemap: `${BASE_URL}/sitemap.xml`,
+    host: 'directive8020.top',
   };
 }

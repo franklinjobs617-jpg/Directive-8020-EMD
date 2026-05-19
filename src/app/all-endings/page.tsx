@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 All Endings Explained - Clone Twist, Best Ending & More',
   description:
     'Every Directive 8020 ending explained in detail, including the clone twist revelation, the 13th cycle truth, and how to get the best ending where everyone survives.',
-  alternates: { canonical: 'https://directive8020.top/all-endings/' },
+  alternates: { canonical: 'https://directive8020.top/all-endings' },
 };
 
 const faqs = [
@@ -88,7 +88,7 @@ export default function AllEndingsPage() {
       <ArticleSchema
         headline="Directive 8020 All Endings Explained"
         description="Complete breakdown of every ending in Directive 8020, including the clone twist and best ending guide."
-        url="https://directive8020.top/all-endings/"
+        url="https://directive8020.top/all-endings"
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'All Endings' }]} />
@@ -242,7 +242,7 @@ export default function AllEndingsPage() {
           alt="Directive 8020 characters approaching bright doorway - ending scene"
           className="w-full rounded-lg border border-zinc-800"
         />
-        <figcaption className="text-sm text-zinc-500 mt-2 text-center">The survivors approach an uncertain fate — which ending will you reach?</figcaption>
+        <figcaption className="text-sm text-zinc-500 mt-2 text-center">The survivors approach an uncertain fate 鈥?which ending will you reach?</figcaption>
       </figure>
       <p>
         The optimal ending requires:
@@ -259,7 +259,7 @@ export default function AllEndingsPage() {
           The crew survives, the mimic is contained, and Corinth&rsquo;s illegal
           clone experiments are exposed to the public. This requires near-perfect
           play &mdash; see our{' '}
-          <a href="/save-everyone/" className="text-emerald-400 underline">
+          <a href="/save-everyone" className="text-emerald-400 underline">
             Save Everyone guide
           </a>{' '}
           for the exact path.
@@ -314,13 +314,13 @@ export default function AllEndingsPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/choices-consequences/" className="block text-d8020 hover:underline">
+          <a href="/choices-consequences" className="block text-d8020 hover:underline">
             All Choices &amp; Consequences &rarr;
           </a>
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone &rarr;
           </a>
-          <a href="/walkthrough/" className="block text-d8020 hover:underline">
+          <a href="/walkthrough" className="block text-d8020 hover:underline">
             Full Walkthrough &rarr;
           </a>
         </div>
@@ -330,3 +330,4 @@ export default function AllEndingsPage() {
     </article>
   );
 }
+

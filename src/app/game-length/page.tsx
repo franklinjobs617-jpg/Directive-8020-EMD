@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 Game Length - How Long to Beat & All Episodes',
   description:
     'How long is Directive 8020? Complete breakdown of game length, all 8 episodes, chapter list, and completionist time. Plus comparison to other Dark Pictures games.',
-  alternates: { canonical: 'https://directive8020.top/game-length/' },
+  alternates: { canonical: 'https://directive8020.top/game-length' },
 };
 
 const faqs = [
@@ -68,7 +68,7 @@ const episodes = [
   {
     num: 6,
     title: 'The Lab',
-    summary: 'The crew discovers a hidden clone laboratory. Vats of unconscious bodies — exact copies of the crew — line the walls. The clone revelation begins to unfold.',
+    summary: 'The crew discovers a hidden clone laboratory. Vats of unconscious bodies 鈥?exact copies of the crew 鈥?line the walls. The clone revelation begins to unfold.',
   },
   {
     num: 7,
@@ -88,7 +88,7 @@ export default function GameLengthPage() {
       <ArticleSchema
         headline="Directive 8020 Game Length & Episodes"
         description="Complete breakdown of Directive 8020 game length, all 8 episodes, and how long to beat."
-        url="https://directive8020.top/game-length/"
+        url="https://directive8020.top/game-length"
       />
       <Breadcrumb items={[{ label: 'Game Length' }]} />
       <PageHero src="/steam-ss01.webp" alt="Directive 8020 spaceship corridor - game length and episode guide" />
@@ -210,13 +210,13 @@ export default function GameLengthPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/walkthrough/" className="block text-d8020 hover:underline">
+          <a href="/walkthrough" className="block text-d8020 hover:underline">
             Full Walkthrough &rarr;
           </a>
-          <a href="/difficulty-guide/" className="block text-d8020 hover:underline">
+          <a href="/difficulty-guide" className="block text-d8020 hover:underline">
             Difficulty Guide &amp; Turning Points &rarr;
           </a>
-          <a href="/trophy-guide/" className="block text-d8020 hover:underline">
+          <a href="/trophy-guide" className="block text-d8020 hover:underline">
             Trophy Guide &amp; Roadmap &rarr;
           </a>
         </div>
@@ -226,3 +226,4 @@ export default function GameLengthPage() {
     </article>
   );
 }
+

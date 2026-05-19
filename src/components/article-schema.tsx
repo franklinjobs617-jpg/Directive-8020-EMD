@@ -13,8 +13,12 @@ export function ArticleSchema({
   url,
   datePublished = '2026-05-12',
   dateModified = datePublished,
-  image = '/og-image.jpg',
+  image = '/steam-header.webp',
 }: ArticleSchemaProps) {
+  const absoluteImageUrl = image.startsWith('http')
+    ? image
+    : `https://directive8020.top${image}`;
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -31,7 +35,7 @@ export function ArticleSchema({
       '@type': 'Organization',
       name: 'directive8020.top',
     },
-    image,
+    image: absoluteImageUrl,
     about: {
       '@type': 'VideoGame',
       name: 'Directive 8020',

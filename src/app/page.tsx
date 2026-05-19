@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import { ArticleSchema } from '@/components/article-schema';
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const guides = [
   {
-    href: '/walkthrough/',
+    href: '/walkthrough',
     title: 'Full Walkthrough',
     desc: 'Chapter-by-chapter guide with stealth mechanics, scanner usage, and the complete story of the Cassiopeia.',
     tag: 'Complete Guide',
@@ -19,7 +19,7 @@ const guides = [
     imgAlt: 'Directive 8020 astronaut in spaceship corridor - full game walkthrough',
   },
   {
-    href: '/all-endings/',
+    href: '/all-endings',
     title: 'All Endings Explained',
     desc: 'Every ending revealed, including the devastating clone twist and the truth about the 13th cycle.',
     tag: 'Story',
@@ -27,7 +27,7 @@ const guides = [
     imgAlt: 'Directive 8020 clone confrontation scene - all endings explained',
   },
   {
-    href: '/best-ending/',
+    href: '/best-ending',
     title: 'Best Ending Guide',
     desc: 'Step-by-step guide to the optimal ending. All critical choices, how to save everyone, and expose Corinth.',
     tag: 'Endings',
@@ -35,7 +35,7 @@ const guides = [
     imgAlt: 'Directive 8020 revelation scene - best ending guide',
   },
   {
-    href: '/characters/',
+    href: '/characters',
     title: 'Characters & Cast',
     desc: 'All 5 playable characters and NPCs with actors, face models, roles, and who can live or die.',
     tag: 'Cast',
@@ -43,7 +43,7 @@ const guides = [
     imgAlt: 'Directive 8020 full cast lineup - all characters and voice actors',
   },
   {
-    href: '/choices-consequences/',
+    href: '/choices-consequences',
     title: 'All Choices & Consequences',
     desc: 'Every Turning Point mapped out. Know exactly what each decision triggers before you commit.',
     tag: 'Decisions',
@@ -51,7 +51,7 @@ const guides = [
     imgAlt: 'Directive 8020 Turning Point choice interface - help or run decision',
   },
   {
-    href: '/save-everyone/',
+    href: '/save-everyone',
     title: 'How to Save Everyone',
     desc: 'Step-by-step survival guide for every crew member. Keep Young, Stafford, Eisele, and the rest alive.',
     tag: 'Survival',
@@ -59,7 +59,7 @@ const guides = [
     imgAlt: 'Directive 8020 infected crew member - how to save everyone guide',
   },
   {
-    href: '/all-deaths/',
+    href: '/all-deaths',
     title: 'All Deaths Guide',
     desc: 'Every death scene explained. Triggers, avoidance tips, and the "everyone dies" ending path.',
     tag: 'Deaths',
@@ -67,7 +67,7 @@ const guides = [
     imgAlt: 'Directive 8020 astronaut caught by mimic - all deaths guide',
   },
   {
-    href: '/collectibles/',
+    href: '/collectibles',
     title: 'Collectibles & Dolls',
     desc: 'All Heirloom dolls, experiment logs, Oracle files, and Williams\' private files with locations.',
     tag: 'Collectibles',
@@ -75,7 +75,7 @@ const guides = [
     imgAlt: 'Directive 8020 astronaut exploring cave - collectibles and dolls guide',
   },
   {
-    href: '/trophy-guide/',
+    href: '/trophy-guide',
     title: 'Trophy Guide & List',
     desc: 'Complete trophy list, platinum roadmap, and Survivor Mode strategies.',
     tag: 'Trophies',
@@ -83,7 +83,7 @@ const guides = [
     imgAlt: 'Directive 8020 trophy and achievement guide',
   },
   {
-    href: '/difficulty-guide/',
+    href: '/difficulty-guide',
     title: 'Difficulty & Turning Points',
     desc: 'Explorer, Normal, and Survivor modes explained. How the rewind system works.',
     tag: 'Difficulty',
@@ -91,7 +91,7 @@ const guides = [
     imgAlt: 'Directive 8020 difficulty settings and turning points guide',
   },
   {
-    href: '/multiplayer/',
+    href: '/multiplayer',
     title: 'Multiplayer & Co-Op',
     desc: 'Movie Night mode, online co-op setup, and what replaced Shared Story.',
     tag: 'Co-Op',
@@ -99,7 +99,7 @@ const guides = [
     imgAlt: 'Directive 8020 multiplayer and co-op guide',
   },
   {
-    href: '/game-length/',
+    href: '/game-length',
     title: 'Game Length & Episodes',
     desc: 'How long to beat, all 8 episodes listed, and completionist time breakdown.',
     tag: 'Info',
@@ -107,7 +107,7 @@ const guides = [
     imgAlt: 'Directive 8020 game length and episode guide',
   },
   {
-    href: '/system-requirements/',
+    href: '/system-requirements',
     title: 'System Requirements',
     desc: 'Minimum and recommended PC specs, console performance modes, and optimization tips.',
     tag: 'Technical',
@@ -115,7 +115,7 @@ const guides = [
     imgAlt: 'Directive 8020 spaceship exterior and space station - system requirements',
   },
   {
-    href: '/crashing-fix/',
+    href: '/crashing-fix',
     title: 'Crashing & Bug Fixes',
     desc: 'Fix black screen, won\'t launch, stuttering, and save corruption issues on PC and consoles.',
     tag: 'Fixes',
@@ -162,7 +162,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href="/walkthrough/"
+              href="/walkthrough"
               className="inline-flex items-center gap-2 rounded-lg bg-d8020 px-5 py-2.5 text-sm font-semibold text-white hover:bg-d8020/80 transition-colors"
             >
               Start Walkthrough
@@ -171,7 +171,7 @@ export default function HomePage() {
               </svg>
             </a>
             <a
-              href="/all-endings/"
+              href="/all-endings"
               className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-2.5 text-sm font-semibold text-zinc-300 hover:bg-white/5 transition-colors"
             >
               All Endings
@@ -256,13 +256,13 @@ export default function HomePage() {
           The Cassiopeia crew are not who they think they are. They carry memory
           backups from bodies that died cycles ago. The 13th iteration is about
           to discover the truth. Our{' '}
-          <a href="/all-endings/" className="text-d8020 underline">
+          <a href="/all-endings" className="text-d8020 underline">
             Endings Guide
           </a>{' '}
           breaks down every revelation.
         </p>
         <a
-          href="/all-endings/"
+          href="/all-endings"
           className="text-sm text-d8020 font-semibold hover:underline"
         >
           Read the full breakdown &rarr;
@@ -271,3 +271,4 @@ export default function HomePage() {
     </>
   );
 }
+

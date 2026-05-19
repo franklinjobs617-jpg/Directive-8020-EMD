@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 All Deaths Guide - Every Death Scene & How to Trigger Them',
   description:
     'Complete guide to every death in Directive 8020. How characters die, death triggers by chapter, the "everyone dies" path, and how to avoid or unlock specific death scenes.',
-  alternates: { canonical: 'https://directive8020.top/all-deaths/' },
+  alternates: { canonical: 'https://directive8020.top/all-deaths' },
 };
 
 const faqs = [
@@ -119,7 +119,7 @@ export default function AllDeathsPage() {
       <ArticleSchema
         headline="Directive 8020 All Deaths Guide"
         description="Complete guide to every death scene in Directive 8020 with trigger conditions and avoidance tips."
-        url="https://directive8020.top/all-deaths/"
+        url="https://directive8020.top/all-deaths"
       />
       <Breadcrumb items={[{ label: 'All Deaths' }]} />
       <PageHero src="/steam-ss05.webp" alt="Directive 8020 astronaut caught by alien mimic - all deaths guide" />
@@ -242,13 +242,13 @@ export default function AllDeathsPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone &rarr;
           </a>
-          <a href="/all-endings/" className="block text-d8020 hover:underline">
+          <a href="/all-endings" className="block text-d8020 hover:underline">
             All Endings Explained &rarr;
           </a>
-          <a href="/best-ending/" className="block text-d8020 hover:underline">
+          <a href="/best-ending" className="block text-d8020 hover:underline">
             Best Ending Guide &rarr;
           </a>
         </div>
@@ -258,3 +258,4 @@ export default function AllDeathsPage() {
     </article>
   );
 }
+

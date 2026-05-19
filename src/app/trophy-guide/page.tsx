@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 Trophy Guide & Complete Trophy List (PS5, Xbox, PC)',
   description:
     'Complete Directive 8020 trophy and achievement guide with full list, roadmap, and tips for platinum. All secret trophies revealed, Survivor Mode strategies included.',
-  alternates: { canonical: 'https://directive8020.top/trophy-guide/' },
+  alternates: { canonical: 'https://directive8020.top/trophy-guide' },
 };
 
 const faqs = [
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: 'Is Directive 8020 platinum difficult?',
     answer:
-      'The main challenges are completing Survivor Mode (no Turning Points, harder QTEs, aggressive AI) and getting the "Everyone Lives" trophy which requires near-perfect choices. It is moderately difficult — harder than Until Dawn but achievable with preparation.',
+      'The main challenges are completing Survivor Mode (no Turning Points, harder QTEs, aggressive AI) and getting the "Everyone Lives" trophy which requires near-perfect choices. It is moderately difficult 鈥?harder than Until Dawn but achievable with preparation.',
   },
   {
     question: 'Are there missable trophies in Directive 8020?',
@@ -60,7 +60,7 @@ export default function TrophyGuidePage() {
       <ArticleSchema
         headline="Directive 8020 Trophy Guide & Complete Trophy List"
         description="Full trophy and achievement guide for Directive 8020 with roadmap and platinum tips."
-        url="https://directive8020.top/trophy-guide/"
+        url="https://directive8020.top/trophy-guide"
       />
       <Breadcrumb items={[{ label: 'Trophy Guide' }]} />
       <PageHero src="/steam-ss07.webp" alt="Directive 8020 astronaut exploring alien cave - trophy guide and achievement list" />
@@ -167,13 +167,13 @@ export default function TrophyGuidePage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone (for &ldquo;Everyone Lives&rdquo; trophy) &rarr;
           </a>
-          <a href="/all-endings/" className="block text-d8020 hover:underline">
+          <a href="/all-endings" className="block text-d8020 hover:underline">
             All Endings Explained &rarr;
           </a>
-          <a href="/walkthrough/" className="block text-d8020 hover:underline">
+          <a href="/walkthrough" className="block text-d8020 hover:underline">
             Full Walkthrough &rarr;
           </a>
         </div>
@@ -183,3 +183,4 @@ export default function TrophyGuidePage() {
     </article>
   );
 }
+

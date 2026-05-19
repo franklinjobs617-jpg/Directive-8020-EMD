@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 Difficulty Guide - Explorer vs Survivor Mode & Turning Points',
   description:
     'Complete difficulty guide for Directive 8020: Explorer, Normal, and Survivor modes explained. How the Turning Points rewind system works, and which difficulty to choose for your first playthrough.',
-  alternates: { canonical: 'https://directive8020.top/difficulty-guide/' },
+  alternates: { canonical: 'https://directive8020.top/difficulty-guide' },
 };
 
 const faqs = [
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: 'What are Turning Points in Directive 8020?',
     answer:
-      'Turning Points is a story tree feature that lets you rewind to pivotal moments and replay key decisions without starting the game over. It does not overwrite your progress — you can continue from where you were after replaying a branch.',
+      'Turning Points is a story tree feature that lets you rewind to pivotal moments and replay key decisions without starting the game over. It does not overwrite your progress 鈥?you can continue from where you were after replaying a branch.',
   },
   {
     question: 'What difficulty should I play first?',
@@ -78,7 +78,7 @@ export default function DifficultyGuidePage() {
       <ArticleSchema
         headline="Directive 8020 Difficulty Guide"
         description="Complete difficulty guide for Directive 8020 covering Explorer, Normal, and Survivor modes and the Turning Points system."
-        url="https://directive8020.top/difficulty-guide/"
+        url="https://directive8020.top/difficulty-guide"
       />
       <Breadcrumb items={[{ label: 'Difficulty Guide' }]} />
       <PageHero src="/steam-ss04.webp" alt="Directive 8020 crew making difficult decision - difficulty and turning points guide" />
@@ -157,7 +157,7 @@ export default function DifficultyGuidePage() {
         <p className="text-sm text-zinc-400">
           The decision to tie Turning Points to difficulty was controversial.
           On r/DarkPicturesAnthology, players called it &ldquo;a TERRIBLE
-          idea&rdquo; — those wanting the hardest difficulty feel punished
+          idea&rdquo; 鈥?those wanting the hardest difficulty feel punished
           because they cannot retry choices. The developers explained this was
           intentional: Survivor Mode is meant to be a &ldquo;live with your
           choices&rdquo; experience. If you want to explore all outcomes,
@@ -250,13 +250,13 @@ export default function DifficultyGuidePage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/trophy-guide/" className="block text-d8020 hover:underline">
+          <a href="/trophy-guide" className="block text-d8020 hover:underline">
             Trophy Guide &amp; Roadmap &rarr;
           </a>
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone &rarr;
           </a>
-          <a href="/game-length/" className="block text-d8020 hover:underline">
+          <a href="/game-length" className="block text-d8020 hover:underline">
             Game Length &amp; Episodes &rarr;
           </a>
         </div>
@@ -266,3 +266,4 @@ export default function DifficultyGuidePage() {
     </article>
   );
 }
+

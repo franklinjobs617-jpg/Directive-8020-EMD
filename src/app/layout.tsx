@@ -1,13 +1,16 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Script from "next/script";
 
-export const metadataBase = new URL("https://directive8020.top");
+const SITE_URL = "https://directive8020.top";
+const OG_IMAGE_URL = "/steam-header.webp";
+
+export const metadataBase = new URL(SITE_URL);
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://directive8020.top"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default:
       "Directive 8020 - Complete Guide, Walkthrough, Endings & Trophy List",
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://directive8020.top",
+    url: SITE_URL,
     siteName: "Directive 8020 Guide",
     title:
       "Directive 8020 - Complete Guide, Walkthrough, Endings & Trophy List",
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
       "Complete Directive 8020 guide: full walkthrough, all endings, choices, how to save everyone, trophy list, and more.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: OG_IMAGE_URL,
         width: 1200,
         height: 630,
         alt: "Directive 8020 Complete Guide",
@@ -48,7 +51,7 @@ export const metadata: Metadata = {
     title: "Directive 8020 - Complete Guide",
     description:
       "Complete Directive 8020 guide: walkthrough, endings, choices, trophy list.",
-    images: ["/og-image.jpg"],
+    images: [OG_IMAGE_URL],
   },
   robots: {
     index: true,
@@ -62,7 +65,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://directive8020.top",
+    canonical: SITE_URL,
   },
 };
 
@@ -119,7 +122,7 @@ export default function RootLayout({
             gtag('config', 'G-4EBPTFKKWC', {
               page_path: window.location.pathname,
             });
-            console.log('GA4 Script Ready ✅');
+            console.log('GA4 Script Ready 鉁?);
           `}
         </Script>
         <VideoGameSchema />
@@ -133,37 +136,37 @@ export default function RootLayout({
             </Link>
             <div className="hidden sm:flex items-center gap-6 text-sm text-zinc-400">
               <Link
-                href="/walkthrough/"
+                href="/walkthrough"
                 className="hover:text-white transition-colors"
               >
                 Walkthrough
               </Link>
               <Link
-                href="/all-endings/"
+                href="/all-endings"
                 className="hover:text-white transition-colors"
               >
                 Endings
               </Link>
               <Link
-                href="/characters/"
+                href="/characters"
                 className="hover:text-white transition-colors"
               >
                 Characters
               </Link>
               <Link
-                href="/trophy-guide/"
+                href="/trophy-guide"
                 className="hover:text-white transition-colors"
               >
                 Trophies
               </Link>
               <Link
-                href="/collectibles/"
+                href="/collectibles"
                 className="hover:text-white transition-colors"
               >
                 Collectibles
               </Link>
               <Link
-                href="/crashing-fix/"
+                href="/crashing-fix"
                 className="hover:text-white transition-colors"
               >
                 Fixes
@@ -192,25 +195,25 @@ export default function RootLayout({
             className="hidden sm:hidden border-t border-white/8 px-4 pb-3"
           >
             <div className="flex flex-col gap-2 text-sm text-zinc-400 pt-2">
-              <Link href="/walkthrough/" className="py-1 hover:text-white">
+              <Link href="/walkthrough" className="py-1 hover:text-white">
                 Walkthrough
               </Link>
-              <Link href="/all-endings/" className="py-1 hover:text-white">
+              <Link href="/all-endings" className="py-1 hover:text-white">
                 Endings
               </Link>
-              <Link href="/characters/" className="py-1 hover:text-white">
+              <Link href="/characters" className="py-1 hover:text-white">
                 Characters
               </Link>
-              <Link href="/save-everyone/" className="py-1 hover:text-white">
+              <Link href="/save-everyone" className="py-1 hover:text-white">
                 Save Everyone
               </Link>
-              <Link href="/trophy-guide/" className="py-1 hover:text-white">
+              <Link href="/trophy-guide" className="py-1 hover:text-white">
                 Trophies
               </Link>
-              <Link href="/collectibles/" className="py-1 hover:text-white">
+              <Link href="/collectibles" className="py-1 hover:text-white">
                 Collectibles
               </Link>
-              <Link href="/crashing-fix/" className="py-1 hover:text-white">
+              <Link href="/crashing-fix" className="py-1 hover:text-white">
                 Fixes
               </Link>
             </div>
@@ -226,30 +229,30 @@ export default function RootLayout({
                 <h3 className="font-semibold text-white mb-3">Story</h3>
                 <ul className="space-y-1.5 text-zinc-500">
                   <li>
-                    <Link href="/walkthrough/" className="hover:text-zinc-300">
+                    <Link href="/walkthrough" className="hover:text-zinc-300">
                       Walkthrough
                     </Link>
                   </li>
                   <li>
-                    <Link href="/all-endings/" className="hover:text-zinc-300">
+                    <Link href="/all-endings" className="hover:text-zinc-300">
                       All Endings
                     </Link>
                   </li>
                   <li>
-                    <Link href="/best-ending/" className="hover:text-zinc-300">
+                    <Link href="/best-ending" className="hover:text-zinc-300">
                       Best Ending
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/choices-consequences/"
+                      href="/choices-consequences"
                       className="hover:text-zinc-300"
                     >
                       Choices
                     </Link>
                   </li>
                   <li>
-                    <Link href="/game-length/" className="hover:text-zinc-300">
+                    <Link href="/game-length" className="hover:text-zinc-300">
                       Game Length
                     </Link>
                   </li>
@@ -260,24 +263,24 @@ export default function RootLayout({
                 <ul className="space-y-1.5 text-zinc-500">
                   <li>
                     <Link
-                      href="/save-everyone/"
+                      href="/save-everyone"
                       className="hover:text-zinc-300"
                     >
                       Save Everyone
                     </Link>
                   </li>
                   <li>
-                    <Link href="/all-deaths/" className="hover:text-zinc-300">
+                    <Link href="/all-deaths" className="hover:text-zinc-300">
                       All Deaths
                     </Link>
                   </li>
                   <li>
-                    <Link href="/difficulty-guide/" className="hover:text-zinc-300">
+                    <Link href="/difficulty-guide" className="hover:text-zinc-300">
                       Difficulty Guide
                     </Link>
                   </li>
                   <li>
-                    <Link href="/multiplayer/" className="hover:text-zinc-300">
+                    <Link href="/multiplayer" className="hover:text-zinc-300">
                       Multiplayer
                     </Link>
                   </li>
@@ -287,17 +290,17 @@ export default function RootLayout({
                 <h3 className="font-semibold text-white mb-3">Collectibles</h3>
                 <ul className="space-y-1.5 text-zinc-500">
                   <li>
-                    <Link href="/characters/" className="hover:text-zinc-300">
+                    <Link href="/characters" className="hover:text-zinc-300">
                       Characters &amp; Cast
                     </Link>
                   </li>
                   <li>
-                    <Link href="/collectibles/" className="hover:text-zinc-300">
+                    <Link href="/collectibles" className="hover:text-zinc-300">
                       Dolls &amp; Collectibles
                     </Link>
                   </li>
                   <li>
-                    <Link href="/trophy-guide/" className="hover:text-zinc-300">
+                    <Link href="/trophy-guide" className="hover:text-zinc-300">
                       Trophy Guide
                     </Link>
                   </li>
@@ -308,14 +311,14 @@ export default function RootLayout({
                 <ul className="space-y-1.5 text-zinc-500">
                   <li>
                     <Link
-                      href="/system-requirements/"
+                      href="/system-requirements"
                       className="hover:text-zinc-300"
                     >
                       System Requirements
                     </Link>
                   </li>
                   <li>
-                    <Link href="/crashing-fix/" className="hover:text-zinc-300">
+                    <Link href="/crashing-fix" className="hover:text-zinc-300">
                       Crash Fixes
                     </Link>
                   </li>
@@ -347,3 +350,4 @@ export default function RootLayout({
     </html>
   );
 }
+

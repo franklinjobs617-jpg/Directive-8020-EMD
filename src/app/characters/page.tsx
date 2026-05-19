@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 All Characters & Cast - Voice Actors, Face Models & Roles',
   description:
     'Meet the full Directive 8020 cast: all 5 playable characters and NPCs with voice actors, face models, roles, and who can live or die. Includes Lashana Lynch, Danny Sapani, Lotte Verbeek and more.',
-  alternates: { canonical: 'https://directive8020.top/characters/' },
+  alternates: { canonical: 'https://directive8020.top/characters' },
 };
 
 const faqs = [
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'Are the character names based on real astronauts?',
     answer:
-      'Yes. Three protagonist surnames — Cernan, Stafford, and Young — are shared with the Apollo 10 crew (Gene Cernan, Tom Stafford, and John Young). The Cassiopeia mission is based on Apollo 10, which also involved orbiting without landing.',
+      'Yes. Three protagonist surnames 鈥?Cernan, Stafford, and Young 鈥?are shared with the Apollo 10 crew (Gene Cernan, Tom Stafford, and John Young). The Cassiopeia mission is based on Apollo 10, which also involved orbiting without landing.',
   },
   {
     question: 'Is LaMarcus Williams a playable character?',
@@ -116,7 +116,7 @@ export default function CharactersPage() {
       <ArticleSchema
         headline="Directive 8020 All Characters & Cast"
         description="Complete character and cast guide for Directive 8020 with all playable characters, NPCs, voice actors, and face models."
-        url="https://directive8020.top/characters/"
+        url="https://directive8020.top/characters"
       />
       <Breadcrumb items={[{ label: 'Characters & Cast' }]} />
       <PageHero src="/characters-lineup.jpg" alt="Directive 8020 full cast lineup - all playable characters and voice actors" />
@@ -134,7 +134,7 @@ export default function CharactersPage() {
       <h2>Playable Characters</h2>
       <p>
         Directive 8020 features an ensemble cast of 5 playable protagonists.
-        Unlike previous Dark Pictures games, there is no plot armor — any
+        Unlike previous Dark Pictures games, there is no plot armor 鈥?any
         combination of characters can be alive in the final chapters. Each
         character has their own story arc, relationships, and potential death
         scenes.
@@ -244,8 +244,8 @@ export default function CharactersPage() {
 
       <h2>Apollo 10 Easter Egg</h2>
       <p>
-        Three protagonist surnames — <strong>Cernan</strong>, <strong>Stafford</strong>,
-        and <strong>Young</strong> — are shared with the Apollo 10 crew (Gene Cernan,
+        Three protagonist surnames 鈥?<strong>Cernan</strong>, <strong>Stafford</strong>,
+        and <strong>Young</strong> 鈥?are shared with the Apollo 10 crew (Gene Cernan,
         Tom Stafford, and John Young). The Cassiopeia mission in Directive 8020 is
         directly inspired by Apollo 10: both missions involved orbiting a destination
         without landing. Apollo 10 orbited the Moon in 1969; the Cassiopeia orbits
@@ -257,13 +257,13 @@ export default function CharactersPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone &rarr;
           </a>
-          <a href="/all-endings/" className="block text-d8020 hover:underline">
+          <a href="/all-endings" className="block text-d8020 hover:underline">
             All Endings Explained &rarr;
           </a>
-          <a href="/walkthrough/" className="block text-d8020 hover:underline">
+          <a href="/walkthrough" className="block text-d8020 hover:underline">
             Full Walkthrough &rarr;
           </a>
         </div>
@@ -273,3 +273,4 @@ export default function CharactersPage() {
     </article>
   );
 }
+

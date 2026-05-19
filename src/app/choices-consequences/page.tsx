@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 All Choices & Consequences - Turning Points Guide',
   description:
     'Every choice and consequence in Directive 8020, including all Turning Points, decision branches, and how each choice affects character survival and endings.',
-  alternates: { canonical: 'https://directive8020.top/choices-consequences/' },
+  alternates: { canonical: 'https://directive8020.top/choices-consequences' },
 };
 
 const faqs = [
@@ -42,7 +42,7 @@ const turningPoints = [
     choiceB: 'Hold Position',
     consequenceA: 'Ship enters uncharted space; first mimic encounter is delayed but more dangerous. Crew discovers Scanner earlier.',
     consequenceB: 'Ship takes heavy damage; power failures force early stealth sequences. Some doors are permanently sealed, limiting routes.',
-    bestFor: 'Alter Course — safer early game and better tool access',
+    bestFor: 'Alter Course 鈥?safer early game and better tool access',
   },
   {
     chapter: 'Chapter 2',
@@ -51,7 +51,7 @@ const turningPoints = [
     choiceB: 'Report to command and wait',
     consequenceA: 'Crew gains critical information about mimic behavior but risks infection. Sims can be exposed.',
     consequenceB: 'Safer short-term, but the mimic spreads unchecked. Later chapters have more mimics to deal with.',
-    bestFor: 'Investigate — knowledge is survival in this game',
+    bestFor: 'Investigate 鈥?knowledge is survival in this game',
   },
   {
     chapter: 'Chapter 3',
@@ -60,7 +60,7 @@ const turningPoints = [
     choiceB: 'Side with Young (relaxed quarantine)',
     consequenceA: 'Quarantine doors become usable barriers in Chapter 5. Infected crew are caught early. Lower morale.',
     consequenceB: 'Higher morale but mimics infiltrate safe zones. In Chapter 5, you must rely on stealth alone.',
-    bestFor: 'Side with Eisele — tactical advantage in Chapter 5',
+    bestFor: 'Side with Eisele 鈥?tactical advantage in Chapter 5',
   },
   {
     chapter: 'Chapter 4',
@@ -69,7 +69,7 @@ const turningPoints = [
     choiceB: 'Accept Oracle\'s explanation',
     consequenceA: 'Early clues about the clone revelation. Characters are better prepared for Chapter 6. Oracle may lock some systems.',
     consequenceB: 'Ship systems remain stable but the clone revelation hits harder in Chapter 6. Characters are more shaken.',
-    bestFor: 'Force Oracle to reveal — prepare the crew for the truth',
+    bestFor: 'Force Oracle to reveal 鈥?prepare the crew for the truth',
   },
   {
     chapter: 'Chapter 5',
@@ -78,7 +78,7 @@ const turningPoints = [
     choiceB: 'Rescue trapped crew',
     consequenceA: 'Trapped crew members die. The breach is contained. Remaining crew are safer.',
     consequenceB: 'You can save everyone with good stealth play, but if you fail, more people die than the seal option.',
-    bestFor: 'Rescue trapped crew (requires skill) — only way to save everyone',
+    bestFor: 'Rescue trapped crew (requires skill) 鈥?only way to save everyone',
   },
   {
     chapter: 'Chapter 6',
@@ -87,7 +87,7 @@ const turningPoints = [
     choiceB: 'Preserve the clone vats',
     consequenceA: 'No more resets. This cycle is the last one. Adds urgency but also finality.',
     consequenceB: 'Corinth can still restart the cycle. But the clone data becomes evidence you can use against them.',
-    bestFor: 'Preserve the vats — evidence for the Expose Corinth ending',
+    bestFor: 'Preserve the vats 鈥?evidence for the Expose Corinth ending',
   },
   {
     chapter: 'Chapter 7',
@@ -96,7 +96,7 @@ const turningPoints = [
     choiceB: 'Deny the clone truth',
     consequenceA: 'Characters gain clarity and make rational decisions. Opens the path to the best ending.',
     consequenceB: 'Characters become erratic. More unpredictable outcomes. Some characters may turn on each other.',
-    bestFor: 'Accept the truth — essential for best ending',
+    bestFor: 'Accept the truth 鈥?essential for best ending',
   },
   {
     chapter: 'Chapter 8',
@@ -158,7 +158,7 @@ export default function ChoicesConsequencesPage() {
       <ArticleSchema
         headline="Directive 8020 All Choices & Consequences"
         description="Complete guide to every choice, consequence, and Turning Point in Directive 8020."
-        url="https://directive8020.top/choices-consequences/"
+        url="https://directive8020.top/choices-consequences"
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Choices & Consequences' }]} />
@@ -178,7 +178,7 @@ export default function ChoicesConsequencesPage() {
           alt="Directive 8020 Turning Point choice interface HELP or RUN decision"
           className="w-full rounded-lg border border-zinc-800"
         />
-        <figcaption className="text-sm text-zinc-500 mt-2 text-center">Every Turning Point choice branches the story — choose carefully.</figcaption>
+        <figcaption className="text-sm text-zinc-500 mt-2 text-center">Every Turning Point choice branches the story 鈥?choose carefully.</figcaption>
       </figure>
 
       <h2>How Turning Points Work</h2>
@@ -302,13 +302,13 @@ export default function ChoicesConsequencesPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/all-endings/" className="block text-d8020 hover:underline">
+          <a href="/all-endings" className="block text-d8020 hover:underline">
             All Endings Explained &rarr;
           </a>
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone &rarr;
           </a>
-          <a href="/walkthrough/" className="block text-d8020 hover:underline">
+          <a href="/walkthrough" className="block text-d8020 hover:underline">
             Full Walkthrough &rarr;
           </a>
         </div>
@@ -318,3 +318,4 @@ export default function ChoicesConsequencesPage() {
     </article>
   );
 }
+

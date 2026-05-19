@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 All Collectibles & Dolls - Heirloom Locations Guide',
   description:
     'Find every collectible in Directive 8020: Dark Pictures Heirloom dolls, experiment logs, Oracle files, and Williams\' private files. Chapter-by-chapter locations with screenshots.',
-  alternates: { canonical: 'https://directive8020.top/collectibles/' },
+  alternates: { canonical: 'https://directive8020.top/collectibles' },
 };
 
 const faqs = [
@@ -64,7 +64,7 @@ const collectibleTypes = [
   {
     name: 'Williams\' Private Files',
     icon: 'W',
-    description: 'Confidential documents belonging to LaMarcus Williams, the Corinth Corporation CEO. Found in the captain\'s quarters. Reference crew members from previous cycles — a critical clue to the clone truth.',
+    description: 'Confidential documents belonging to LaMarcus Williams, the Corinth Corporation CEO. Found in the captain\'s quarters. Reference crew members from previous cycles 鈥?a critical clue to the clone truth.',
     trophy: 'Related to story progression',
     count: 'Found in Chapter 4',
   },
@@ -75,61 +75,61 @@ const chapterGuide = [
     chapter: 1,
     title: 'The Meteor',
     collectibles: [
-      'Heirloom Doll #1 — In the crew quarters before the meteor impact. Check the storage compartment near the bunks.',
+      'Heirloom Doll #1 鈥?In the crew quarters before the meteor impact. Check the storage compartment near the bunks.',
     ],
   },
   {
     chapter: 2,
     title: 'First Contact',
     collectibles: [
-      'Heirloom Doll #2 — In the maintenance corridor, behind a Wedge Tool door.',
-      'Crew log from Williams — Found in the supply room accessible after obtaining the Wedge Tool.',
+      'Heirloom Doll #2 鈥?In the maintenance corridor, behind a Wedge Tool door.',
+      'Crew log from Williams 鈥?Found in the supply room accessible after obtaining the Wedge Tool.',
     ],
   },
   {
     chapter: 3,
     title: 'Quarantine',
     collectibles: [
-      'Heirloom Doll #3 — Hidden in the medical bay storage area. Easy to miss if you side with Young and skip the med bay.',
+      'Heirloom Doll #3 鈥?Hidden in the medical bay storage area. Easy to miss if you side with Young and skip the med bay.',
     ],
   },
   {
     chapter: 4,
     title: 'The Oracle',
     collectibles: [
-      'Oracle\'s Hidden Files — Access the ship\'s AI terminal and force Oracle to reveal data.',
-      'Williams\' Private Files — Found in the captain\'s quarters. Contains references to non-existent crew members.',
-      'Heirloom Doll #4 — In the server room, behind a maintenance panel.',
+      'Oracle\'s Hidden Files 鈥?Access the ship\'s AI terminal and force Oracle to reveal data.',
+      'Williams\' Private Files 鈥?Found in the captain\'s quarters. Contains references to non-existent crew members.',
+      'Heirloom Doll #4 鈥?In the server room, behind a maintenance panel.',
     ],
   },
   {
     chapter: 5,
     title: 'Breach',
     collectibles: [
-      'Heirloom Doll #5 — In the engineering section, near where Stafford gets trapped. Use the Scanner to locate it.',
+      'Heirloom Doll #5 鈥?In the engineering section, near where Stafford gets trapped. Use the Scanner to locate it.',
     ],
   },
   {
     chapter: 6,
     title: 'The Lab',
     collectibles: [
-      'Experiment Logs — Multiple logs scattered throughout the clone laboratory. Some are in side rooms requiring the Wedge Tool.',
-      'Oracle\'s Remaining Files — Additional data terminals in the lab area.',
-      'Heirloom Doll #6 — Hidden behind the clone vats. Look for a small alcove on the left side.',
+      'Experiment Logs 鈥?Multiple logs scattered throughout the clone laboratory. Some are in side rooms requiring the Wedge Tool.',
+      'Oracle\'s Remaining Files 鈥?Additional data terminals in the lab area.',
+      'Heirloom Doll #6 鈥?Hidden behind the clone vats. Look for a small alcove on the left side.',
     ],
   },
   {
     chapter: 7,
     title: 'Revelation',
     collectibles: [
-      'Heirloom Doll #7 — In the area where the full clone truth is revealed. Check side rooms.',
+      'Heirloom Doll #7 鈥?In the area where the full clone truth is revealed. Check side rooms.',
     ],
   },
   {
     chapter: 8,
     title: 'Directive 8020',
     collectibles: [
-      'Heirloom Doll #8 — Near the shuttle area in the final chapter. Missable if you rush to the ending.',
+      'Heirloom Doll #8 鈥?Near the shuttle area in the final chapter. Missable if you rush to the ending.',
     ],
   },
 ];
@@ -140,7 +140,7 @@ export default function CollectiblesPage() {
       <ArticleSchema
         headline="Directive 8020 All Collectibles & Dolls Locations"
         description="Complete collectibles guide for Directive 8020 with all Heirloom doll locations, experiment logs, and hidden files."
-        url="https://directive8020.top/collectibles/"
+        url="https://directive8020.top/collectibles"
       />
       <Breadcrumb items={[{ label: 'Collectibles' }]} />
       <PageHero src="/steam-ss07.webp" alt="Directive 8020 astronaut exploring alien cave - collectibles and dolls guide" />
@@ -242,13 +242,13 @@ export default function CollectiblesPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/trophy-guide/" className="block text-d8020 hover:underline">
+          <a href="/trophy-guide" className="block text-d8020 hover:underline">
             Trophy Guide &amp; List &rarr;
           </a>
-          <a href="/walkthrough/" className="block text-d8020 hover:underline">
+          <a href="/walkthrough" className="block text-d8020 hover:underline">
             Full Walkthrough &rarr;
           </a>
-          <a href="/characters/" className="block text-d8020 hover:underline">
+          <a href="/characters" className="block text-d8020 hover:underline">
             All Characters &amp; Cast &rarr;
           </a>
         </div>
@@ -258,3 +258,4 @@ export default function CollectiblesPage() {
     </article>
   );
 }
+

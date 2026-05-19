@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 How to Save Everyone - Full Survival Guide',
   description:
     'Complete guide to keeping every crew member alive in Directive 8020. Step-by-step survival instructions for Young, Stafford, Eisele, Cooper, Cernan, and Williams, including Survivor Mode tips.',
-  alternates: { canonical: 'https://directive8020.top/save-everyone/' },
+  alternates: { canonical: 'https://directive8020.top/save-everyone' },
 };
 
 const faqs = [
@@ -41,7 +41,7 @@ const characters = [
     role: 'Co-Pilot / Astronaut',
     danger: 'Frequently in direct contact with mimics. Most at risk during stealth sections in Chapters 3 and 5.',
     survival:
-      'Side with Eisele in Ch.3 (quarantine doors save her in Ch.5). In Ch.5, complete the stealth section flawlessly. In Ch.7, she must accept the clone truth — if she denies it, she becomes reckless.',
+      'Side with Eisele in Ch.3 (quarantine doors save her in Ch.5). In Ch.5, complete the stealth section flawlessly. In Ch.7, she must accept the clone truth 鈥?if she denies it, she becomes reckless.',
   },
   {
     name: 'Nolan Stafford',
@@ -73,7 +73,7 @@ const characters = [
     role: 'Technical Engineer',
     danger: 'Must repair ship systems, often alone in dangerous areas. At risk during Ch.5 breach.',
     survival:
-      'In Ch.5, ensure the Wedge Tool is available to unlock alternate escape routes for Cernan. Make supportive dialogue choices to keep his morale high — low morale leads to reckless behavior.',
+      'In Ch.5, ensure the Wedge Tool is available to unlock alternate escape routes for Cernan. Make supportive dialogue choices to keep his morale high 鈥?low morale leads to reckless behavior.',
   },
   {
     name: 'LaMarcus Williams',
@@ -139,7 +139,7 @@ export default function SaveEveryonePage() {
       <ArticleSchema
         headline="Directive 8020 How to Save Everyone"
         description="Complete survival guide for every crew member in Directive 8020."
-        url="https://directive8020.top/save-everyone/"
+        url="https://directive8020.top/save-everyone"
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Save Everyone' }]} />
@@ -299,13 +299,13 @@ export default function SaveEveryonePage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/all-endings/" className="block text-d8020 hover:underline">
+          <a href="/all-endings" className="block text-d8020 hover:underline">
             All Endings Explained &rarr;
           </a>
-          <a href="/choices-consequences/" className="block text-d8020 hover:underline">
+          <a href="/choices-consequences" className="block text-d8020 hover:underline">
             All Choices &amp; Consequences &rarr;
           </a>
-          <a href="/trophy-guide/" className="block text-d8020 hover:underline">
+          <a href="/trophy-guide" className="block text-d8020 hover:underline">
             Trophy Guide &amp; List &rarr;
           </a>
         </div>
@@ -315,3 +315,4 @@ export default function SaveEveryonePage() {
     </article>
   );
 }
+

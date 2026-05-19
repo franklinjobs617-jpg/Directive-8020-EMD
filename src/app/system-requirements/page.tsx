@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 System Requirements - Can Your PC Run It?',
   description:
     'Complete system requirements for Directive 8020 on PC, PS5, and Xbox Series X|S. Minimum and recommended specs, VRAM needs, and optimization tips for smooth gameplay.',
-  alternates: { canonical: 'https://directive8020.top/system-requirements/' },
+  alternates: { canonical: 'https://directive8020.top/system-requirements' },
 };
 
 const faqs = [
@@ -40,7 +40,7 @@ export default function SystemRequirementsPage() {
       <ArticleSchema
         headline="Directive 8020 System Requirements"
         description="PC, PS5, and Xbox system requirements for Directive 8020."
-        url="https://directive8020.top/system-requirements/"
+        url="https://directive8020.top/system-requirements"
       />
       <Breadcrumb items={[{ label: 'System Requirements' }]} />
       <PageHero src="/steam-ss02.webp" alt="Directive 8020 astronaut viewing massive space structure - system requirements and PC specs" />
@@ -164,7 +164,7 @@ export default function SystemRequirementsPage() {
           Having Technical Issues?
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/crashing-fix/" className="block text-d8020 hover:underline">
+          <a href="/crashing-fix" className="block text-d8020 hover:underline">
             Crashing, Black Screen &amp; Launch Fixes &rarr;
           </a>
         </div>
@@ -174,3 +174,4 @@ export default function SystemRequirementsPage() {
     </article>
   );
 }
+

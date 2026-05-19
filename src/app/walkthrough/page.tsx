@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqSection } from "@/components/faq-section";
 import { ArticleSchema } from "@/components/article-schema";
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Directive 8020 Full Walkthrough - Complete Chapter Guide",
   description:
     "Complete Directive 8020 walkthrough covering all 8 chapters, stealth mechanics, scanner usage, tools, Turning Points, and the full story of the Cassiopeia crew.",
-  alternates: { canonical: "https://directive8020.top/walkthrough/" },
+  alternates: { canonical: "https://directive8020.top/walkthrough" },
 };
 
 const faqs = [
@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "Does Directive 8020 have a stealth system?",
     answer:
-      "Yes. Directive 8020 introduces a real-time stealth system called 'Threatening Exploration.' Players must stay in shadows and avoid detection by alien mimics. If detected, it does not always mean immediate death — it can trigger new branching narrative paths.",
+      "Yes. Directive 8020 introduces a real-time stealth system called 'Threatening Exploration.' Players must stay in shadows and avoid detection by alien mimics. If detected, it does not always mean immediate death 鈥?it can trigger new branching narrative paths.",
   },
   {
     question: "Can I replay specific chapters?",
@@ -93,7 +93,7 @@ export default function WalkthroughPage() {
       <ArticleSchema
         headline="Directive 8020 Full Walkthrough"
         description="Complete chapter-by-chapter walkthrough for Directive 8020 with stealth mechanics and tool guides."
-        url="https://directive8020.top/walkthrough/"
+        url="https://directive8020.top/walkthrough"
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: "Walkthrough" }]} />
@@ -159,7 +159,7 @@ export default function WalkthroughPage() {
       <p>
         Unlike previous Dark Pictures entries, Directive 8020 features a{" "}
         <strong>real-time stealth system</strong> called "Threatening Exploration."
-        Characters can be killed dynamically outside scripted events — you must
+        Characters can be killed dynamically outside scripted events 鈥?you must
         stay in shadows and avoid detection by alien mimics. If detected, it does
         not always mean immediate death; it can trigger new branching narrative
         paths.
@@ -169,8 +169,7 @@ export default function WalkthroughPage() {
           Stealth Tip
         </p>
         <p className="text-sm text-zinc-400">
-          Stay in shadows and avoid using your flashlight when mimics are nearby —
-          enemies can spot the beam. The shoulder-mounted flashlight on your
+          Stay in shadows and avoid using your flashlight when mimics are nearby 鈥?          enemies can spot the beam. The shoulder-mounted flashlight on your
           utility strap is useful for navigation but can give away your position.
           An optional "safe" mode ensures you always survive stealth sections.
         </p>
@@ -238,7 +237,7 @@ export default function WalkthroughPage() {
           className="w-full rounded-lg border border-zinc-800"
         />
         <figcaption className="text-sm text-zinc-500 mt-2 text-center">
-          The Cassiopeia bridge as the meteor swarm approaches — your first
+          The Cassiopeia bridge as the meteor swarm approaches 鈥?your first
           critical decision.
         </figcaption>
       </figure>
@@ -278,7 +277,7 @@ export default function WalkthroughPage() {
           className="w-full rounded-lg border border-zinc-800"
         />
         <figcaption className="text-sm text-zinc-500 mt-2 text-center">
-          First Contact — Lt. Sims leads the team into the damaged sectors.
+          First Contact 鈥?Lt. Sims leads the team into the damaged sectors.
         </figcaption>
       </figure>
       <p>
@@ -293,7 +292,7 @@ export default function WalkthroughPage() {
           className="w-full rounded-lg border border-zinc-800"
         />
         <figcaption className="text-sm text-zinc-500 mt-2 text-center">
-          Quarantine — trust fractures as the crew suspects mimic infection.
+          Quarantine 鈥?trust fractures as the crew suspects mimic infection.
         </figcaption>
       </figure>
       <div className="choice-box">
@@ -355,7 +354,7 @@ export default function WalkthroughPage() {
           className="w-full rounded-lg border border-zinc-800"
         />
         <figcaption className="text-sm text-zinc-500 mt-2 text-center">
-          The Clone Lab — the moment everything changes. You are not who you
+          The Clone Lab 鈥?the moment everything changes. You are not who you
           think you are.
         </figcaption>
       </figure>
@@ -380,7 +379,7 @@ export default function WalkthroughPage() {
           className="w-full rounded-lg border border-zinc-800"
         />
         <figcaption className="text-sm text-zinc-500 mt-2 text-center">
-          Revelation — the 13th cycle. Everything you believed was a lie.
+          Revelation 鈥?the 13th cycle. Everything you believed was a lie.
         </figcaption>
       </figure>
       <div className="choice-box">
@@ -404,7 +403,7 @@ export default function WalkthroughPage() {
       <p>
         Your ending depends on: how many crew members are alive, whether they
         accepted the clone truth, and the key decisions made in Chapters 3, 5,
-        and 7. See our <a href="/all-endings/">All Endings Guide</a> for the
+        and 7. See our <a href="/all-endings">All Endings Guide</a> for the
         full breakdown.
       </p>
 
@@ -413,17 +412,17 @@ export default function WalkthroughPage() {
           Continue Reading
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/all-endings/" className="block text-d8020 hover:underline">
+          <a href="/all-endings" className="block text-d8020 hover:underline">
             All Endings Explained &rarr;
           </a>
           <a
-            href="/choices-consequences/"
+            href="/choices-consequences"
             className="block text-d8020 hover:underline"
           >
             All Choices &amp; Consequences &rarr;
           </a>
           <a
-            href="/save-everyone/"
+            href="/save-everyone"
             className="block text-d8020 hover:underline"
           >
             How to Save Everyone &rarr;
@@ -435,3 +434,4 @@ export default function WalkthroughPage() {
     </article>
   );
 }
+

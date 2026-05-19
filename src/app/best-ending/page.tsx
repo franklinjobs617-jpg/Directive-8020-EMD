@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 Best Ending Guide - How to Get the Good Ending',
   description:
     'Directive 8020 best ending guide with survivor tracking, evidence checks, clone and cycle truth, Andromeda risk, rescue vs warning choices, and Story Tree cleanup.',
-  alternates: { canonical: 'https://directive8020.top/best-ending/' },
+  alternates: { canonical: 'https://directive8020.top/best-ending' },
 };
 
 const faqs = [
@@ -137,7 +137,7 @@ export default function BestEndingPage() {
       <ArticleSchema
         headline="Directive 8020 Best Ending Guide"
         description="Directive 8020 best ending guide with survivor tracking, evidence checks, clone and cycle truth, Andromeda risk, rescue vs warning choices, and Story Tree cleanup."
-        url="https://directive8020.top/best-ending/"
+        url="https://directive8020.top/best-ending"
         dateModified="2026-05-15"
       />
       <Breadcrumb items={[{ label: 'Best Ending' }]} />
@@ -332,13 +332,13 @@ export default function BestEndingPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone &rarr;
           </a>
-          <a href="/all-endings/" className="block text-d8020 hover:underline">
+          <a href="/all-endings" className="block text-d8020 hover:underline">
             All Endings Explained &rarr;
           </a>
-          <a href="/choices-consequences/" className="block text-d8020 hover:underline">
+          <a href="/choices-consequences" className="block text-d8020 hover:underline">
             All Choices &amp; Consequences &rarr;
           </a>
         </div>
@@ -348,3 +348,4 @@ export default function BestEndingPage() {
     </article>
   );
 }
+

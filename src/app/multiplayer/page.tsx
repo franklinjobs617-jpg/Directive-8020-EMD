@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 Multiplayer & Co-Op Guide - Movie Night Mode Explained',
   description:
     'How to play Directive 8020 in co-op: Movie Night mode (up to 5 players), online co-op, couch co-op setup, and what happened to Shared Story. Complete multiplayer guide.',
-  alternates: { canonical: 'https://directive8020.top/multiplayer/' },
+  alternates: { canonical: 'https://directive8020.top/multiplayer' },
 };
 
 const faqs = [
@@ -45,7 +45,7 @@ export default function MultiplayerPage() {
       <ArticleSchema
         headline="Directive 8020 Multiplayer & Co-Op Guide"
         description="Complete multiplayer guide for Directive 8020 covering Movie Night mode, online co-op, and couch co-op setup."
-        url="https://directive8020.top/multiplayer/"
+        url="https://directive8020.top/multiplayer"
       />
       <Breadcrumb items={[{ label: 'Multiplayer' }]} />
       <PageHero src="/steam-ss04.webp" alt="Directive 8020 crew making group decision - multiplayer and co-op guide" />
@@ -182,13 +182,13 @@ export default function MultiplayerPage() {
           Related Guides
         </h3>
         <div className="space-y-2 text-sm">
-          <a href="/difficulty-guide/" className="block text-d8020 hover:underline">
+          <a href="/difficulty-guide" className="block text-d8020 hover:underline">
             Difficulty Guide &amp; Turning Points &rarr;
           </a>
-          <a href="/characters/" className="block text-d8020 hover:underline">
+          <a href="/characters" className="block text-d8020 hover:underline">
             All Characters &amp; Cast &rarr;
           </a>
-          <a href="/save-everyone/" className="block text-d8020 hover:underline">
+          <a href="/save-everyone" className="block text-d8020 hover:underline">
             How to Save Everyone &rarr;
           </a>
         </div>
@@ -198,3 +198,4 @@ export default function MultiplayerPage() {
     </article>
   );
 }
+

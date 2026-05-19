@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { FaqSection } from '@/components/faq-section';
 import { ArticleSchema } from '@/components/article-schema';
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Directive 8020 Crashing, Black Screen & Launch Fixes (PC, PS5, Xbox)',
   description:
     'Fix Directive 8020 crashing, black screen on startup, won\'t launch, low FPS, and other technical issues on PC, PS5, and Xbox Series X|S. Step-by-step solutions.',
-  alternates: { canonical: 'https://directive8020.top/crashing-fix/' },
+  alternates: { canonical: 'https://directive8020.top/crashing-fix' },
 };
 
 const faqs = [
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'How do I verify game files on Steam?',
     answer:
-      'Right-click Directive 8020 in your library → Properties → Installed Files → Verify integrity of game files. This checks for and redownloads any corrupted files.',
+      'Right-click Directive 8020 in your library 鈫?Properties 鈫?Installed Files 鈫?Verify integrity of game files. This checks for and redownloads any corrupted files.',
   },
 ];
 
@@ -40,7 +40,7 @@ export default function CrashingFixPage() {
       <ArticleSchema
         headline="Directive 8020 Crashing, Black Screen & Launch Fixes"
         description="Technical troubleshooting guide for Directive 8020 crashes and performance issues."
-        url="https://directive8020.top/crashing-fix/"
+        url="https://directive8020.top/crashing-fix"
       />
       <Breadcrumb items={[{ label: 'Crashing Fix' }]} />
       <PageHero src="/steam-ss05.webp" alt="Directive 8020 astronaut thrown by explosion - crashing and bug fixes troubleshooting" />
@@ -75,13 +75,11 @@ export default function CrashingFixPage() {
           Engine 5 and needs recent driver support.
         </li>
         <li>
-          <strong>Verify game files</strong> &mdash; Steam: Right-click game →
-          Properties → Installed Files → Verify integrity. Epic: Click the
-          three dots → Verify.
+          <strong>Verify game files</strong> &mdash; Steam: Right-click game 鈫?          Properties 鈫?Installed Files 鈫?Verify integrity. Epic: Click the
+          three dots 鈫?Verify.
         </li>
         <li>
-          <strong>Run as Administrator</strong> &mdash; Right-click the exe →
-          Properties → Compatibility → Run as administrator.
+          <strong>Run as Administrator</strong> &mdash; Right-click the exe 鈫?          Properties 鈫?Compatibility 鈫?Run as administrator.
         </li>
         <li>
           <strong>Disable overlays</strong> &mdash; Turn off Steam Overlay,
@@ -103,8 +101,7 @@ export default function CrashingFixPage() {
       <h3>2. Black Screen on Launch</h3>
       <ol>
         <li>
-          <strong>Add launch option:</strong> Right-click game → Properties →
-          Launch Options → add <code className="text-d8020 bg-d8020/10 px-1.5 py-0.5 rounded text-xs">-windowed</code>
+          <strong>Add launch option:</strong> Right-click game 鈫?Properties 鈫?          Launch Options 鈫?add <code className="text-d8020 bg-d8020/10 px-1.5 py-0.5 rounded text-xs">-windowed</code>
         </li>
         <li>
           <strong>Delete config file:</strong> Navigate to{' '}
@@ -114,8 +111,7 @@ export default function CrashingFixPage() {
           and delete the contents. The game will regenerate default settings.
         </li>
         <li>
-          <strong>Disable fullscreen optimization:</strong> Find the game exe →
-          Right-click → Properties → Compatibility → Check &ldquo;Disable
+          <strong>Disable fullscreen optimization:</strong> Find the game exe 鈫?          Right-click 鈫?Properties 鈫?Compatibility 鈫?Check &ldquo;Disable
           fullscreen optimization&rdquo;
         </li>
         <li>
@@ -154,17 +150,17 @@ export default function CrashingFixPage() {
       <h2>PS5 Fixes</h2>
       <ol>
         <li>
-          <strong>Rebuild database</strong> &mdash; Turn off PS5 → hold power
-          button until second beep → Rebuild Database. Fixes most loading and
+          <strong>Rebuild database</strong> &mdash; Turn off PS5 鈫?hold power
+          button until second beep 鈫?Rebuild Database. Fixes most loading and
           crash issues.
         </li>
         <li>
-          <strong>Clear cache</strong> &mdash; Turn off PS5 → unplug for 2
-          minutes → plug back in. Clears temporary data that may cause crashes.
+          <strong>Clear cache</strong> &mdash; Turn off PS5 鈫?unplug for 2
+          minutes 鈫?plug back in. Clears temporary data that may cause crashes.
         </li>
         <li>
-          <strong>Update system software</strong> &mdash; Settings → System
-          Software → Update. Game requires a recent PS5 firmware version.
+          <strong>Update system software</strong> &mdash; Settings 鈫?System
+          Software 鈫?Update. Game requires a recent PS5 firmware version.
         </li>
         <li>
           <strong>Switch performance mode</strong> &mdash; If you experience
@@ -179,8 +175,7 @@ export default function CrashingFixPage() {
           seconds until fully off. Wait 30 seconds, then restart.
         </li>
         <li>
-          <strong>Clear local save data</strong> &mdash; My Games &amp; Apps →
-          Manage → Directive 8020 → Saved Data → Delete Local (cloud saves
+          <strong>Clear local save data</strong> &mdash; My Games &amp; Apps 鈫?          Manage 鈫?Directive 8020 鈫?Saved Data 鈫?Delete Local (cloud saves
           remain).
         </li>
         <li>
@@ -206,7 +201,7 @@ export default function CrashingFixPage() {
           </a>{' '}
           for hotfix updates. The developers are actively patching launch day
           issues. Also see our{' '}
-          <a href="/system-requirements/" className="text-d8020 hover:underline">
+          <a href="/system-requirements" className="text-d8020 hover:underline">
             System Requirements
           </a>{' '}
           page to confirm your hardware meets the minimum specs.
@@ -217,3 +212,4 @@ export default function CrashingFixPage() {
     </article>
   );
 }
+
